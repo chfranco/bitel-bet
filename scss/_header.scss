@@ -1,0 +1,103 @@
+@import 'variables';
+
+#header{
+  padding: .53rem .6rem;
+  background-image: radial-gradient(circle at 50% 0, $metallic-blue, rgba(0, 0, 0, 0) 29%);
+  @media (min-width: $md){
+    padding: .8rem 1rem;
+  }
+  @media (min-width: $lg){
+    position: relative;
+    z-index: 1;
+    background: $dark;
+    // padding-left: calc($desk-menu-width + 1.3rem);
+    padding-left: 2rem;
+    box-shadow: 1px 12px 46px #0000003b;
+  }
+  &.header-transparent{
+    background: none;
+    @media (min-width: $lg){
+      background: $dark;
+    }
+  }
+  .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  figure.logo{
+    margin: 0;
+    width: 80px;
+    @media (min-width: $md){
+      width: 94px;
+    }
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  .content-right{
+    display: flex;
+    align-items: center;
+  }
+}
+#menu-toggler{
+  width: 44px;
+  height: 44px;
+  background: url(../img/icon-toggler.svg) no-repeat;
+  background-size: 22px;
+  background-position: center;
+  cursor: pointer;
+  @media (min-width: $lg){
+    display: none;
+  }
+  &:hover{
+    filter: brightness(10); 
+  }
+}
+.user-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  .user-icon{
+    background-image: url(../img/icon-user.svg);
+    width: 22px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all ease .4s;
+    &.user-free{
+      background-image: url(../img/icon-user-free.svg);
+      width: 22px;
+      height: 20px;
+    }
+    &.user-premium{
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/icon-user-premium.svg);
+    }
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  &:hover{
+    .text-login{
+      color: $teal;
+    }
+  }
+  .text-login{
+    font-style: normal;
+    color: $white;
+    display: none;
+    padding-left: .5rem;
+    flex-shrink: 0;
+    transition: all ease .3s;
+    &:hover{
+    }
+    @media (min-width: $lg){
+      display: block;
+    }
+  }
+}

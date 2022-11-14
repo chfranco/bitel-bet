@@ -1,0 +1,278 @@
+.page:after{
+    display: none;
+}
+
+.mundial-bg{
+    background: radial-gradient(circle at 27% 0, #54648f, rgba(0,0,0)20%)!important;
+}
+
+#mundial-clasificacion{
+    background: url(../img/bg-mundial.png) no-repeat  #000;   
+    background-size:contain;
+    #header{
+        background: none;
+        box-shadow: none;
+    }
+    @media (max-width: $md){
+        background: #2a3248;
+    } 
+    .header-titulo-mundial{
+        background-image: linear-gradient(to bottom, #842b4f00, #4e082c); 
+        margin: 40px 80px 0;
+        position: relative; 
+        padding: 40px 0;
+        border-radius: 10px 10px 0 0;
+        @media (max-width: $lg){
+            margin: 0 30px 0px;
+        } 
+        @media (max-width: $md){
+            margin: 0;
+        } 
+
+        .titulo{
+            text-align: center;
+            width: 268px;
+            height: 75px;
+            padding: 11px 4px 10px;
+            background-image: linear-gradient(to bottom, #842b4e, #4e082c); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 40px;
+            border: 3px solid #e8b82d;
+            margin: 0 auto;
+            color: #fff200;
+            font-size: 21px;
+            font-style: italic;
+
+        }
+    }
+
+    .tabla-posiciones-mundial{
+        background-color: #4e082c;
+        margin: 0 80px 40px;
+        position: relative; 
+        border-radius: 0 0 10px 10px ;
+        @media (max-width: $lg){
+            margin: 0 30px 40px;
+        } 
+        @media (max-width: $md){
+            margin: 0;
+        } 
+        .titulo-mi-posicion{
+            width: 85%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .setion-a{
+        max-width: 1200px;
+        margin: 0 auto;
+        .min-posicion{
+            .descripcion-col-1{
+                @media (min-width: $md){
+                    display: none;
+                }
+            }
+        }
+        .tabla-descripcion{
+            display: flex;
+            justify-content: space-around;
+            .descripcion-col-1,
+            .descripcion-col-2{
+                display: flex;
+                width: 40%;
+                padding-left: 1.9%;
+                p:nth-child(even){
+                    flex-grow: 2;
+                    margin-left: 8%;
+                }
+                p:nth-child(3){
+                    margin-right: 9%;
+                }
+            }
+            .descripcion-col-1{
+                @media (max-width: $md){
+                    width: 85%;
+                }
+            }
+            .descripcion-col-2{
+                @media (max-width: $md){
+                    display: none;
+                }
+            }
+        }
+        .lista{
+            display: grid;
+            grid-template-columns: 40% 40%;
+            justify-content: space-around;
+            @media (max-width: $md){
+                grid-template-columns: 90%;
+            }
+            .elemento{
+                display: flex;
+                align-items: center;
+                height: 60px;
+                margin: 1px 0px 12px 5px;
+                padding: 0 12px 0;
+                border-radius: 32px;
+                border: dashed 1px #e8b82d;
+                position: relative;
+                font-style: italic;
+                
+                .oval{
+                    width: 60px;
+                    height: 40px;
+                    margin: 1px 1px 0 0;
+                    padding: 1px 1px 3px;
+                    background-color: #842b4e;
+                    border-radius: 100px;
+                    font-size: 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #e8b82d;
+                }
+                p{
+                    margin-left: 3%;
+                    &:nth-child(even){
+                        flex-grow: 2;
+                        margin-left: 8%;
+                    }
+                    &:nth-child(3){
+                        margin-right: 5%;
+                    }
+                }
+                .element-coin
+                {   position: relative;
+                    &:after{
+                    content: "";
+                    position: relative;
+                    display: inline-block;
+                    background-image: url(../img/icon-bitel-coin-3.svg);
+                    background-repeat: no-repeat;
+                    bottom: -2px;
+                    width: 1em;
+                    height: 1em;
+                    margin-left: 6px;
+                    }
+                }
+            }
+            .elemento-activo{
+                background-color:  #e8b82d;
+                .oval{
+                    background-color: #4e082c;
+                    color: #e8b82d;
+                }
+            }
+        }
+    } 
+
+    .section-paginacion{
+        display: flex;
+        justify-content: center;
+        margin: 25px 0 50px;
+        .botones-paginacion{
+            display: flex;
+            flex-direction: row;
+            button{
+                width: 40px;
+                height: 40px;
+                margin: 5px;
+                padding: 1px 1px 3px;
+                background-color: #4e082e;
+                border-radius: 100px;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #e8b82d;
+                border: 1px solid #842b4e;
+                font-style: italic;
+                &:hover{
+                    background: #842b4e;
+                }
+                &:active{
+                    background: #842b4e;
+                }
+                &.btn-activo{
+                    background: #842b4e;
+                }
+            }
+        }
+    }
+
+    .setion-b {
+        width: 100%;
+        max-width: 1200px; 
+        margin: 0 auto;
+        padding-bottom: 40px;
+        h3{
+            text-align: center;
+            font-style: italic;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            @media (max-width: $md){
+                flex-direction: column;
+                align-items: center;
+            }
+            img{
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+                display: block;
+                margin-right: 3%;
+            @media (max-width: $md){
+                    margin-bottom: 20px;
+                }
+            }
+            .section-cta{
+                display: flex;
+                flex-direction: column;
+                img{
+                    position: relative;
+                    width: 140px;
+                    left: -26px;
+                    @media (max-width: $md){
+                        display: none;
+                    } 
+                }
+                .btn-mundial{
+                    margin: 0;
+                    border: none;
+                    margin-left: 3%;
+                    align-self: end;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    footer{
+        .content {
+            @media (max-width: $md){
+            border-top: 1px solid #842b4e;
+            }
+        }
+        @media (max-width: $md){
+        background: #4e082c;
+        }
+    }
+
+    .footer-logo{
+        width: 5.5rem;
+        @media (max-width: $md){
+            width: 3.25rem;
+        }
+        a{
+            filter: none;
+            @media (max-width: $md){
+                filter: brightness(0) invert(1);
+            }
+        }
+    } 
+}
+

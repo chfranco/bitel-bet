@@ -1,0 +1,181 @@
+@import 'variables';
+
+#bets.modal-wrapper{
+  .btn-close-popup{
+    margin-bottom: .1rem;
+  }
+  .modal{
+    & > .content{
+      padding-top: 0;
+      padding-bottom: 5.5rem;
+    }
+  }
+}
+#bets-tabs{
+  button.tab{
+    padding-top: 0;
+    width: 50%;
+  }
+}
+.bets-tabs-content{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+.bets-tabs-content{
+  padding: .8rem .2rem;
+  .gradient-overlay{
+    left: 0;
+  }
+  .cta-fixed{
+    left: 0;
+  }
+}
+
+.aditional-coins{
+  border: 1px solid $metallic-blue;
+  background-color: rgba(#252c40, .8);
+  border-radius: $br-sm;
+  padding: .3rem .6rem .5rem;
+  font-size: 0.92rem;
+  font-style: normal;
+  margin: -.7rem 0 2rem;
+  strong{
+    font-size: 1rem;
+    margin-right: .2rem;
+    &:after{
+      top: .2em;
+    }
+  }
+}
+.game-info{
+  border: 1px solid $metallic-blue;
+  border-radius: $br-md;
+  padding: .9rem .9rem .5rem;
+  font-style: normal;
+  margin-bottom: 1.3rem;
+  header{
+    display: flex;
+    padding: .9rem 0 .7rem;
+    justify-content: space-between;
+    align-items: center;
+    .btn-remove{
+      flex-shrink: 0;
+    }
+  }
+  section{
+    border-top: 1px dotted $metallic-blue;
+    font-size: 15px;
+    position: relative;
+    &.tip:after{
+      font-size: .8rem;
+      left: 2.5rem;
+    }
+  }
+  section.winner{
+    padding: 1rem 0 .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    .tag{
+      color: $teal;
+      display: block;
+      font-weight: 500;
+    }
+  }
+  section.match-score{
+    padding-bottom: 1rem;
+    p{
+      text-align: center;
+      .with-coin{
+        &:after{
+          font-size: .9em;
+        }
+      }
+    }
+    .teams{
+      display: flex;
+      justify-content: center;
+    }
+    .team{
+      display: flex;
+      align-items: center;
+      img.team-logo{
+        object-fit: contain;
+        display: block;
+        width: 1.875rem;
+        height: 1.875rem;
+        margin: 0 .6rem;
+      }
+      .score{
+        width: 3.125rem;
+      }
+      &:first-child{
+        margin-right: 1.1rem;
+      }
+    }
+  }
+}
+
+.your-bet-values{
+  display: flex;
+  background-color: #1f2535;
+  border: 1px solid $metallic-blue;
+  border-radius: $br-md;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 1.3rem;
+  text-align: center;
+  & > div{
+    padding: 1rem .9rem 1.2rem;
+    width: 50%;
+    .number{
+      font-weight: 700;
+    }
+  }
+  .left{
+    border-right: 1px dotted $metallic-blue;
+    .input-wrapper{
+      display: inline-flex;
+      align-items: center;
+    }
+    p{
+      margin: 0 0 .4rem;
+    }
+    input.score{
+      max-width: 50px;
+    }
+    .with-coin{
+      top: -.18em;
+    }
+  }
+  .right{
+    .number{
+      display: block;
+      color: $yellow;
+      font-size: 1.25rem;
+      margin-top: .7rem;
+      &:after{
+        width: 0.94rem;
+        height: 0.94rem;
+        top: 0;
+      }
+    }
+  }
+}
+#your-bets{
+  .table{
+    &:not(:last-child){
+      margin-bottom: 1rem;
+    }
+  }
+}
+.no-bets{
+  font-style: italic;
+  text-align: center;
+  padding: 1rem 1rem 2rem;
+  font-size: .8rem;
+}

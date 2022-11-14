@@ -1,0 +1,152 @@
+@import 'variables';
+
+.bet-value{
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: $white;
+  padding: .15rem .5rem;
+  border-radius: 1rem;
+  min-width: 50px;
+  font-weight: 700;
+  color: $dark-grey-blue;
+  font-size: 15px;
+  text-align: center;
+  span{
+    display: flex;
+    align-items: center;
+    &:after{
+      content: '';
+      width: .9rem;
+      height: .9rem;
+      background: url(../img/icon-bet-coin.svg) no-repeat;
+      background-size: 100%;
+      background-position: center;
+      display: inline-block;
+      border-radius: 1rem;
+      margin-left: .2rem;
+      margin-right: -.25rem;
+    }
+  }
+}
+
+.tip{
+  &:after{
+    content: '';
+    font-size: .5rem;
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    border: 1px dotted $metallic-blue;
+    border-left: none;
+    border-top: none;
+    top: calc(-.5em - 1px);
+    left: calc(50% - .5em);
+    transform: rotate(45deg);
+    background-color: $dark;
+  }
+}
+
+.notice{
+  background-color: rgba(#000, .1);
+  padding: .4rem 1rem 1rem;
+  border-radius: 8px;
+  font-size: .75rem;
+  text-align: center;
+  font-style: normal;
+  .with-coin{
+    &:after{
+      margin: 0 .4em 0 .3em;
+      top: .5em;
+    }
+  }
+  .text{
+    margin-bottom: .4rem;
+  }
+  a{
+    font-size: 13px;
+    color: $teal;
+    text-decoration: underline;
+    &:hover{
+      color: $white;
+    }
+  }
+}
+
+.logoname{
+  color: #687eb9;
+  display: flex;
+  align-items: center;
+  .logo{
+    width: 1.4375rem;
+    height: 1.4375rem;
+    flex-shrink: 0;
+    margin-right: .8rem;
+  }
+  .name{
+    margin: 0;
+    text-align: left;
+    font-size: .8125rem;
+    .league{
+      font-size: .6875rem;
+      font-weight: 500;
+      display: block;
+    }
+  }
+}
+.game-results{
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 2.3rem;
+  margin-top: .45rem;
+  .name{
+    padding-right: 1rem;
+  }
+  .result{
+    display: block;
+  }
+  .ammount{
+    .with-coin{
+      font-size: .8125rem;
+      &:after{
+        font-size: .7rem;
+        top: .55em;
+      }
+    }
+  }
+}
+input.score{
+  color: white;
+  padding: .4rem;
+  border-radius: $br-sm;
+  background-color: $metallic-blue;
+  min-width: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.league-name{
+  display: flex;
+  align-items: center;
+  font-size: .875rem;
+  font-style: normal;
+  margin-bottom: 1rem;
+  img.league-logo{
+    margin-right: .6rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    display: block;
+    object-fit: contain;
+  }
+}

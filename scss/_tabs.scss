@@ -1,0 +1,360 @@
+@import 'variables';
+
+.main-tabs-wrapper{
+  background-color: $dark-grey-blue;
+  border-radius: $br-lg;
+  padding: .4rem;
+  box-shadow: 0 16px 70px #000000f0;
+  &.cyr-tabs-wrapper{
+    box-shadow: none;
+  }
+  @media (min-width: $lg){
+    padding-top: 0;
+    margin-top: 1.7rem;
+  }
+}
+.main-tabs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .7rem;
+  @media (min-width: $lg){
+    position: relative;
+    top: -2.33rem;
+    justify-content: center;
+    margin-bottom: -1.3rem;
+  }
+  button.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #54648f;
+    height: 30px;
+    color: $dark;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    width: calc(50% - .1rem);
+    border: 1px solid transparent;
+    &:hover{
+      background-color: lighten(#54648f, 10%);
+    }
+    &.active{
+      background-color: $white;
+    }
+    @media (min-width: $lg){
+      border-radius: .7rem .7rem 0 0;
+      max-width: 14.75rem;
+      width: 100%;
+      margin: 0 .5rem;
+      padding: 1.1rem 1rem;
+    }
+    .icon{
+      margin-right: .4rem;
+      width: 30px;
+      height: 26px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .icon-esports{
+      background-image: url(../img/icon-tab-esports.png);
+    }
+    .icon-futbol{
+      background-image: url(../img/icon-tab-futbol.png);
+    }
+  }
+}
+.main-tabs-content{
+  padding: 0 .25rem;
+  display: none;
+  &.active{
+    display: block;
+  }
+  @media (min-width: $lg){
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/*---- ESPORTS TABS ---*/
+.esports-tabs{
+  display: flex;
+  margin-bottom: 1.4rem;
+  @media (min-width: $lg){
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button.tab{
+    width: 100%;
+    padding: .7rem 0;
+    $icon-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #54648f;
+    position: relative;
+    &:hover{
+      .icon{
+        filter: invert(0) brightness(150) saturete(0);
+        opacity: .5;
+      }
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      width: 0; 
+      height: 0; 
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid transparent;
+      bottom: -6px;
+      transition: all ease .4s;
+    }
+    .icon{
+      width: $icon-size;
+      height: $icon-size;
+      background-size: contain;
+      background-position: center;
+      opacity: .25;
+      transition: all ease .4s;
+      filter: sepia(100%) saturate(300%) hue-rotate(191deg);
+    }
+    .icon-2{
+      background-position: calc(-#{$icon-size} * 1) 0;
+    }
+    .icon-3{
+      background-position: calc(-#{$icon-size} * 2) 0;
+    }
+    .icon-4{
+      background-position: calc(-#{$icon-size} * 3) 0;
+    }
+    .icon-5{
+      background-position: calc(-#{$icon-size} * 4) 0;
+    }
+    &.active{
+      border-color: white;
+      &:after{
+        border-top-color: $white;
+      }
+      .icon{
+        opacity: 1;
+        filter: none;
+      }
+    }
+  }
+}
+
+/*---- FUTBOL TABS ---*/
+.tab-list{
+  max-width: 500px;
+  margin: 0 auto;
+  .options-wrapper{
+    display: flex;
+    padding-bottom: 6px;
+    margin: 0 auto;
+  }
+  button.tab{
+    flex-shrink: 0;
+    position: relative;
+    color: $metallic-blue;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 1rem .7rem;
+    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid $metallic-blue;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 0; 
+      height: 0; 
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid transparent;
+      bottom: -6px;
+      left: calc(50% - 3px);
+      transition: all ease .4s;
+    }
+    &:focus{
+      outline: none;
+    }
+    &:hover{
+      color: $teal;
+    }
+    &.active{
+      color: $white;
+      border-color: white;
+      &:after{
+        border-top-color: $white;
+      }
+    }
+  }
+}
+.tab-list-slider{
+  position: relative;
+  transition: all ease .3s;
+  .more{
+    z-index: 5;
+    position: absolute;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    pointer-events: none;
+    width: 3rem;
+    height: calc(100% - 8px);
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to right, rgba(50, 61, 89, 0), $dark-grey-blue 78%);
+    transition: all ease .4s;
+    .btn{
+      pointer-events: all;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      &:after{
+        content: '';
+        display: block;
+        border: 1px solid white;
+        border-left: none;
+        border-bottom: none;
+        margin-right: 7px;
+        $icon-size: 12px;
+        width: $icon-size;
+        height: $icon-size;
+        transform: rotate(45deg);
+        transition: all ease .4s;
+      }
+      &:hover{
+        &:after{
+          border-color: $yellow;
+        }
+      }
+    }
+  }
+  .more-left{
+    right: auto;
+    left: 0;
+    transform: scaleX(-1);
+    .btn{
+      &:after{
+        margin-right: 7px;
+        //transform: rotate(-135deg);
+      }
+    }
+  }
+  .tabs-scroll{
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .options-wrapper{
+    width: max-content;
+  }
+  &.date-tabs{
+    .more{
+      background-image: linear-gradient(to right, rgba($dark, 0), $dark 78%) !important;
+    }
+    .tab{
+      span{
+        display: block;
+      }
+    }
+  }
+}
+
+
+/*---- BLOCK TABS ----*/
+.tabs-block{
+  display: flex;
+  .tab{
+    width: 100%;
+    padding: 1rem;
+    color: #53638e;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    &:hover{
+      color: $teal;
+    }
+    &.active{
+      color: $white;
+      background-color: #252c40;
+      &:first-child:before, &:last-child:before{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: inherit;
+        top: 100%;
+      }
+      &:first-child:before{
+        left: 0;
+      }
+      &:last-child:before{
+        right: 0;
+      }
+    }
+  }
+}
+.tab-content{
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  display: block;
+  position: relative;
+  z-index: -9999;
+  pointer-events: none;
+  //display: none;
+  overflow: hidden;
+  content-visibility: nnone;
+  &.active{
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+    pointer-events: all;
+    transform: none;
+    //display: block;
+  }
+}
+.tabs-block-contents{
+  background-color: #252c40;
+  padding: .65rem .65rem 1rem .65rem;
+  border-radius: $br-md;
+  min-height: 3rem;
+}
+.event-tabs-content{
+  padding-top: .8rem;
+}
+
+.fake-tab{
+  text-align: left;
+  header.ft-header{
+    padding: .5rem .6rem;
+    border-radius: 8px 8px 0 0;
+    background-color: #252c40;
+    font-size: .875rem;
+    color: $white;
+    font-weight: 600;
+    text-align: center;
+    min-width: 5.625rem;
+    display: inline-block;
+  }
+  .ft-content{
+    padding: .8rem 1rem 1.1rem;
+    border-radius: 0 8px 8px 8px;
+    background-color: #252c40;
+  }
+}

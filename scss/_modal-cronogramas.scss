@@ -1,0 +1,16 @@
+@import 'variables';
+
+
+#cronogramas{
+  .content{
+    padding-top: .2rem;
+  }
+  .date-filter{
+    margin: 0 auto 1.5rem;
+  }
+  .current-date{
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1.1rem;
+  }
+}

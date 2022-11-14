@@ -1,0 +1,476 @@
+@import 'variables';
+
+.popup-overlay{
+  //overflow-y: scroll;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: all ease .5s;
+  padding: 0 1rem;
+  @media (min-width: $md){
+    justify-content: center;
+  }
+  &.active{
+
+  }
+}
+.popup{
+  text-align: center;
+  color: white;
+  z-index: 50;
+  //height: 100%;
+  //margin-top: 100%;
+  padding: 1.2rem 0 1.4rem;
+  .btn-close-popup{
+    margin-bottom: 1rem;
+  }
+}
+.popup-box{
+  position: relative;
+  min-height: 16rem;
+  max-height: calc(100vh - 100px);
+  background-color: $dark;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  padding: 2.7rem 1.2rem 2.5rem;
+  border-radius: $br-lg;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  &:not(.no-bg){
+    background-image: url(../img/bg-popup.png);
+  }
+  &:before{
+    pointer-events: none;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-hl-popup.png) no-repeat;
+    background-size: contain;
+    background-position: center top;
+  }
+  &.popup-with-header{
+    padding-top: 1rem;
+  }
+  header.popup-header{
+    padding: .6rem 0 1.3rem;
+    .title{
+      font-size: 0.88rem;
+      padding-bottom: 1rem;
+      margin: 0;
+      border-bottom: 1px dotted $metallic-blue;
+      &.tip{
+        position: relative;
+        &:after{
+          font-size: .75rem;
+          bottom: -.58em;
+          top: auto;
+        }
+      }
+    }
+  }
+  /*---- INFO POPUPS ----*/
+  .content{
+    figure.popup-icon{
+      max-width: 50px;
+      margin: 0 auto;
+      .popup-icon-top{
+        margin-bottom: 10rem;
+      }
+    }
+    .title{
+      color: $yellow;
+      font-style: italic;
+      font-size: 1.25rem;
+      margin-bottom: 0;
+    }
+    .text{
+      font-style: italic;
+      font-weight: 500;
+    }
+    small{
+      font-style: italic;
+    }
+    p{
+      font-size: .9rem;
+    }
+  }
+  .btn-cta{
+    max-width: 260px;
+    width: 100%;
+  }
+  .options{
+    &.two{
+      display: flex;
+      .btn-cta{
+        min-width: auto;
+        &:first-child{
+          margin-right: .6rem;
+        }
+      }
+    }
+  }
+  &.popup-scroll{
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    &:after{
+      content: '';
+      position: absolute;
+      height: 5rem;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.90) 100%);
+      z-index: 20;
+      pointer-events: none;
+      border-radius: 0 0 18px 18px;
+    }
+    .content{
+      padding-right: .4rem;
+      padding-bottom: 2.5rem;
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 4px;
+        transition: all ease .4s;
+        border-radius: 2px;
+      }
+      &::-webkit-scrollbar-track {
+        //box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.17);
+      }
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: rgba($teal, .8); 
+        border-radius: 10px;
+        transition: all ease .4s;
+        &:hover{
+          background: $teal;
+        }
+      }
+    }
+  }
+}
+
+.table-purchase-info{
+  display: flex;
+  background-color: #1f2535;
+  border: 1px solid $metallic-blue;
+  border-radius: $br-md;
+  font-style: italic;
+  text-align: left;
+  font-size: 14px;
+  .left{
+    padding: 1rem .4rem 1rem .7rem;
+    border-right: 1px solid $metallic-blue;
+    width: 50%;
+  }
+  .right{
+    padding: 1rem .7rem;
+    width: 50%;
+  }
+  .heading{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: .3rem;
+    text-align: left;
+    letter-spacing: -.005em;
+  }
+  .name{
+    font-weight: 800;
+  }
+  .price{
+    font-weight: 800;
+    color: $yellow;
+  }
+}
+
+#login{
+  .popup-box{
+    padding: 2rem 1rem 2.5rem;
+  }
+  .content{
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: .8rem;
+  }
+  .logo-bitel{
+    display: block;
+    margin: 0 auto 1.5rem;
+    filter: brightness(0) invert(1);
+    width: 4.9375rem;
+  }
+  .btn-register{
+    width: 100%;
+  }
+}
+
+/*---- MODALS ----*/
+.modal-wrapper{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  overflow-y: auto;
+  opacity: 0;
+  display: none;
+  transition: all ease .5s;
+  &.has-dynamic-content{
+    visibility: hidden;
+    display: flex;
+    pointer-events: none;
+    transform: scale(0);
+    transition: opacity ease .5s, transform ease 0s;
+    transition-delay: 0s, .5s;
+    &.active{
+      opacity: 1;
+      pointer-events: all;
+      visibility: visible;
+      transform: none; 
+      transition-delay: 0s;
+    }
+  }
+  @media (min-width: $lg){
+    width: calc(100% - $desk-menu-width);
+  }
+
+}
+.modal{
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-style: italic;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0;
+  height: max-content;
+  &:after{
+    @media (min-width: $md){
+      display: none;
+    }
+  }
+  .btn-close-popup{
+    align-self: flex-end;
+    margin-right: .7rem;
+    margin-top: .7rem;
+  }
+  .title{
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .modal-title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 0 0 2rem;
+  }
+  & > .content{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  // When modal has footer
+  .content-wrapper{
+    min-height: calc(100vh - 4rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & > .content{
+      max-width: 500px;
+      margin: 0 auto;
+      padding-bottom: 2rem;
+      width: 100%;
+    }
+  }
+  &.has-footer{
+    padding: 0;
+    padding-bottom: 0;
+    &:after{
+      bottom: 0;
+      background-position: center calc(100% - 8.4rem);
+    }
+  }
+}
+#welcome{
+  .logo{
+    max-width: 100px;
+    margin: 0 auto 2rem;
+  }
+  p{
+    text-align: center;
+    margin-bottom: 1.4rem;
+  }
+  .buttons{
+    max-width: 300px;
+    margin: 0 auto;
+    .btn-next-step{
+      margin-bottom: 1.3rem;
+    }
+  }
+}
+
+#como-apostar{
+  position: fixed;
+  width: 5.25rem;
+  height: 5.25rem;
+  top: calc(50vh - 2.1rem);
+  right: 1rem;
+  z-index: 20;
+  transition: all ease .23s;
+  button:not(.btn-close-popup){
+    position: relative;
+    z-index: 10;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/bg-como-apostar.png) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all ease .3s;
+    &:hover{
+      transform: scale(110%);
+    }
+  }
+  .btn-close-popup{
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    top: .6rem;
+    font-size: .55rem;
+    &:hover{
+      transform: scale(120%) rotate(45deg);
+    }
+  }
+  .text{
+    font-size: .85rem;
+    font-weight: 800;
+    color: #202f44;
+    text-align: center;
+    font-style: italic;
+    line-height: 1em;
+    margin-bottom: .2em;
+  }
+}
+
+.popup-slider{
+  .popup{
+    padding-bottom: 1rem;
+  }
+  .btn-close-popup {
+    margin-bottom: .8rem;
+  }
+  .popup-box{
+    padding-top: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .content{
+    .popup-title{
+      color: $yellow;
+      font-style: italic;
+      font-size: 1.1rem;
+      margin: 0 0 1rem;
+      position: relative;
+    }
+    .number{
+      width: 45px;
+      margin-bottom: .6rem;
+    }
+    p{
+      font-style: italic;
+      margin-bottom: 1rem;
+      max-width: 240px;
+      font-size: .9rem;
+      min-height: 70px;
+    }
+    .step-figure{
+      margin: 0 auto;
+      width: 200px;
+    }
+    .slick-dots{
+      bottom: -18px;
+    }
+  }
+  .slider-ring{
+    .slick-arrow{
+      top: auto;
+      bottom: 6.8rem;
+      left: auto; 
+      right: 2.2rem;
+      &.slick-prev{
+        bottom: 7.4rem;
+        right: auto; 
+        left: 2.2rem;
+      }
+      &:before{
+        width: 1.87rem;
+        height: 1.87rem;
+      }
+    }
+  }
+}
+#popup-como-canjear{
+  .popup-box{
+    padding-bottom: 1.5rem;
+  }
+  .popup-title{
+    color: $white;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .content{
+    .number{
+      margin-bottom: .8rem;
+    }
+    p{
+      min-height: 50px;
+    }
+    .step-figure{
+      margin-bottom: 1rem;
+    }
+    .btn-cta{
+      font-weight: 700;
+      width: 158px;
+      .content{
+        padding: .6rem;
+      }
+    }
+  }
+
+  .slider-ring{
+    .slick-arrow{
+      bottom: 10.4rem;
+      &.slick-prev{
+        bottom: 11rem;
+      }
+    }
+    .slick-dots{
+      bottom: -18px;
+    }
+  }
+}

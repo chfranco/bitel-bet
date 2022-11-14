@@ -1,0 +1,350 @@
+@import 'variables';
+
+ul.bet-list{
+  list-style: none;
+  padding: 0;
+}
+
+/*---- GENERAL ELEMENTS FOR TABS ---*/
+header.bet-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: .4rem;
+  .bet-title{
+    font-size: 12px;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+  }
+  .bet-status{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    text-align: right;
+  }
+}
+.bet-item{
+
+  // Status
+  &.status-closing{
+    header.bet-heading{
+      .bet-status{
+        color: $warning;
+      }
+    }
+    button.bet-team{
+      &:not(.bet-tie){
+        border-color: $yellow;
+      }
+    }
+  }
+  &.status-closed{
+    header.bet-heading{
+      .bet-status{
+        color: $error;
+      }
+    }
+  }
+  &.status-closed{
+    button.bet-team{
+      background: #4d5772;
+      pointer-events: none;
+    }
+  }
+  &:not(.status-closed){
+    button.bet-team{
+      &:hover{
+        filter: brightness(113%);
+      }
+    }
+  }
+}
+
+/*---- ESPORTS BET LIST ----*/
+
+ul.bet-list-esports{
+  .bet-item{
+    margin-bottom: 1.8rem;
+    position: relative;
+    &.has-selected{
+      &:after{
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        background: url(../img/icon-select-bet-option.png) no-repeat;
+        background-size: 100%;
+        bottom: -.5rem;
+        left: calc(25% - .5rem);
+        pointer-events: none;
+        border-radius: 1rem;
+      }
+      &.has-selected-right{
+        &:after{
+          left: calc(75% - .5rem);
+        }
+      }
+    }
+  }
+  .bet-options{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-color: transparent;
+    border-radius: 6px;
+    box-sizing:content-box;
+  }
+  button.bet-team{
+    $skew: 30deg;
+    background: linear-gradient($teal, #00a5b1);
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    position: relative;
+    transform: skew(-$skew);
+    min-height: 58px;
+    .content{
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transform: skew($skew);
+    }
+    .name{
+      margin: 0;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 14px;
+      color: white;
+    }
+    &:first-child{
+      margin: 0 0 0 -2rem;
+      margin-right: .15rem;
+      .content{
+        padding: .4rem .6rem .4rem 2.2rem;
+        .value{
+          margin: 0 0 0 .4rem;
+        }
+        .name{
+          text-align: left;
+        }
+      }
+    }
+    &:last-child{
+      margin: 0 -2rem 0 0;
+      margin-left: .15rem;
+      .content{
+        padding: .4rem 2.3rem .4rem .4rem;
+        .name{
+          text-align: right;
+        }
+        .value{
+          margin: 0 .4rem 0 0;
+        }
+      }
+    }
+    &:after{
+      transform: skew(30deg);
+    }
+    &.selected{
+      background: radial-gradient(#d166ff, #a436ff);
+
+    }
+  }
+  // Esports bet status
+  .bet-item{
+    &.status-closing{
+      .bet-options{
+        padding-bottom: 1px;
+        border-color: $yellow;
+      }
+    }
+  }
+}
+
+
+/*---- FUTBOL BET LIST ----*/
+
+ul.bet-list-futbol{
+  .bet-item{
+    margin-bottom: 1.8rem;
+  }
+  header.bet-heading{
+    .league{
+      display: flex;
+      align-items: center;
+      img{
+        width: 17px;
+        flex-shrink: 0;
+        margin-right: .5rem;
+      }
+    }
+  }
+  .bet-options{
+    display: flex;
+    justify-content: space-between;
+  }
+  button.bet-team{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    background: linear-gradient($teal, #00a5b1);
+    color: $white;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 8px;
+    flex-grow: 0;
+    border: 1px solid transparent;
+    &:first-child{
+      margin-right: -1.2rem;
+      text-align: left;
+      align-items: flex-start;
+      padding: .5rem 1.4rem .5rem .6rem;
+      .logo-name{
+        img{
+          margin-right: .4rem;
+        }
+        .name{
+          text-align: left;
+        }
+      }
+    }
+    &:last-child{
+      margin-left: -1.2rem;
+      text-align: right;
+      align-items: flex-end;
+      padding: .5rem .6rem .5rem 1.4rem;
+      .logo-name{
+        img{
+          margin-left: .4rem;
+        }
+        .name{
+          text-align: right;
+        }
+      }
+    }
+    .logo-name{
+      display: flex;
+      align-items: center;
+      margin-bottom: .7rem;
+      img{
+        width: 20px;
+        display: block;
+      }
+    }
+    .name{
+      margin: 0;
+      max-width: 8rem;
+    }
+    &.selected{
+      background: radial-gradient(#d166ff, #a436ff);
+      &:after{
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        background: url(../img/icon-select-bet-option.png) no-repeat;
+        background-size: 100%;
+        bottom: -.5rem;
+        left: calc(50% - .5rem);
+        pointer-events: none;
+        border-radius: 1rem;
+      }
+    }
+  }
+  button.bet-tie{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 87px;
+    border: 3px solid $dark-grey-blue;
+    height: 87px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    z-index: 10;
+    padding: .7rem;
+    .name{
+      text-align: center;
+      margin-bottom: .4rem;
+    }
+  }
+}
+
+/*---- BET SCORE ----*/
+
+.bet-score{
+  margin-top: -$br-md;
+  background-color: #202f44;
+  color: $white;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  border: 1px dotted $metallic-blue;
+  border-top: none;
+  header{
+    padding: 1.3rem 1rem .6rem 1rem;
+    border-bottom: 1px dotted $metallic-blue;
+    position: relative;
+    &:after{
+      content: '';
+      font-size: .8rem;
+      display: block;
+      width: 1em;
+      height: 1em;
+      position: absolute;
+      border: 1px dotted $metallic-blue;
+      border-left: none;
+      border-top: none;
+      bottom: -.6em;
+      left: calc(50% - .5em);
+      transform: rotate(45deg);
+      background-color: #202f44;
+  }
+    p{
+      font-weight: 500;
+      margin: 0;
+      font-size: .75rem;
+      .ammount{
+        color: $yellow;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-left: .3rem;
+        &:after{
+          font-size: .8rem;
+          top: .38em;
+        }
+      }
+    }
+  }
+  .content{
+    padding: .9rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: $sm){
+      justify-content: space-around;
+    }
+    p{
+      font-weight: 300;
+      font-size: .6875rem;
+      margin: 0;
+      padding: 0 .5rem;
+      max-width: 200px;
+      @media (min-width: $md){
+        max-width: 210px;
+      }
+    }
+    input{
+      flex-shrink: 0;
+      max-width: 3rem;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+  }
+}

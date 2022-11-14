@@ -1,0 +1,137 @@
+@import 'variables';
+
+#page-que-es-bitel{
+  font-style: italic;
+  @media (min-width: $lg){
+    .cols{
+      display: flex;
+    }
+    .col{
+      width: 50%;
+    }
+    .col-left{
+      
+    }
+  }
+
+
+  p, ul{
+    font-size: 0.94rem;
+    line-height: 1.5rem;
+  }
+  p{
+    text-align: center;
+  }
+  .btn-cta{
+    max-width: 15.63rem;
+    width: 100%;
+    font-weight: 700;
+  }
+  .slider-circle{
+    margin-bottom: 2.6rem;
+  }
+  .slider-ring{
+    .slick-arrow{
+      &.slick-next{
+        right: -.03rem;
+      }
+    }
+  }
+}
+section#que-es-bitel{
+  .title{
+    text-align: center;
+    @media (min-width: $lg){
+      text-align: left;
+    }
+  }
+  padding: 2.4rem 0 3rem;
+  @media (min-width: $lg){
+    padding-bottom: 0;
+  }
+  .subtitle{
+    @media (min-width: $lg){
+      text-align: left;
+    }
+  }
+}
+
+// Section Cómo funciona
+
+section#como-funciona{
+  padding: 2rem 0 2rem;
+}
+
+section#vuelvete-premium{
+  padding: 3rem 0 5rem;
+  h2{
+    margin-bottom: 1.2rem;
+  }
+  h3.subtitle{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  p.coin-text{
+    margin: 0 0 2rem; 
+    .icon-bitel-coin-2{
+      margin: 0 -.3rem;
+    }
+  }
+}
+
+section#comprar-monedas{
+  padding: 0 0 5rem;
+  h2{
+    margin-bottom: 2.4rem;
+  }
+  h3.subtitle{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+}
+
+section#canjear-monedas{
+  padding: 0 0 3rem;
+  .container{
+    max-width: 900px;
+  }
+  .cols-canjear{
+    @media (min-width: $lg){
+      display: flex;
+      align-items: center;
+    }
+  }
+  h1{
+    br{
+      @media (min-width: $lg){
+        display: none;
+      }
+    }
+  }
+  figure{
+    margin-bottom: 2.4rem;
+    img{
+      margin-bottom: -1em;
+    }
+    figcaption{
+      font-size: 13px;
+    }
+  }
+  p{
+    margin: 0 auto;
+    max-width: 20rem;
+    font-style: italic;
+    @media (min-width: $lg){
+      margin: 0 0 2rem 0;
+      text-align: left;
+      max-width: 400px;
+    }
+  }
+  .btn-cta{
+    @media (min-width: $lg){
+      margin: 0;
+    }
+  }
+}

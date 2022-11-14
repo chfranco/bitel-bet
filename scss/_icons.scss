@@ -1,0 +1,27 @@
+@import 'variables';
+
+.icon{
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &.icon-bitel-coin-2{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    top: 1.2rem;
+    background-image: url(../img/icon-bitel-coin-2.svg);
+  }
+}.with-coin{
+  position: relative;
+  &:after{
+    content: '';
+    width: 1.17em;
+    height: 1.17rem;
+    background: url(../img/icon-bitel-coin-3.svg) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+    top: .29em;
+    margin-left: .4em;
+  }
+}

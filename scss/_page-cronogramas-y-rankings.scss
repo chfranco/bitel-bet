@@ -1,0 +1,17 @@
+@import 'variables';
+
+#page-cronogramas-y-rankings{
+  .cyr-tabs-wrapper{
+    padding-bottom: 1.3rem;
+    .btn-icon{
+      &:not(:last-child){
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+  .accordeon{
+    &:not(:last-child){
+      //margin-bottom: 1.2rem;
+    }
+  }
+}

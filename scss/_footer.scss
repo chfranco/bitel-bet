@@ -1,0 +1,110 @@
+@import 'variables';
+.page-footer{
+  bottom: 0;
+  padding: 0 1rem;
+  .content{
+    border-top: 1px solid #54648f;
+    padding: 1.5rem 0 1.7rem;
+    @media (min-width: $md){
+      display:flex;
+    }
+    @media (min-width: $lg){
+      //padding-left: calc($desk-menu-width + .5rem);
+      padding-left: 1rem;
+    }
+  }
+  .top{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 1.3rem;
+    @media (min-width: $md){
+      margin-right: 3rem;
+    }
+  }
+  .footer-logo{
+    flex-shrink: 0;
+    width: 3.25rem;
+    margin-right: 4.3rem;
+    a{
+      display: block;
+      filter: brightness(0) invert(1);
+      transition-duration: .2;
+      &:hover{
+       filter: none;
+      }
+    }
+    img{
+      display: block;
+    }
+  }
+  .arrow-link{
+    color: $white;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: bold;
+    &:before{
+      content: '';
+      position: relative;
+      display: inline-block;
+      width: .4em;
+      height: .4em;
+      border: 1.5px solid $white;
+      border-left: none;
+      border-bottom: none;
+      margin-right: .4em;
+      transform: rotate(45deg);
+      bottom: .06em;
+      transition: all ease .4s;
+    }
+    &:hover{
+      color: $teal;
+      &:before{
+        border-color: $teal;
+      }
+    }
+  }
+}
+ul.social-menu{
+  display: flex;
+  li{
+    &:not(:last-child){
+      margin-right: 1.2rem;
+    }
+    a{
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-position: center;
+      &.icon-fb{
+        background-image: url(../img/social-icon-fb.svg);
+      }
+      &.icon-ig{
+        background-image: url(../img/social-icon-ig.svg);
+      }
+      &.icon-yt{
+        background-image: url(../img/social-icon-yt.svg);
+      }
+      &:hover{
+        opacity: .5;
+      }
+    }
+  }
+}
+#btn-btt{
+  position: fixed;
+  bottom: 1.5rem;
+  right: 0.6rem;
+  z-index: 10;
+  width: 3.7rem;
+  height: 3.7rem;
+  background: url(../img/btn-btt.svg) no-repeat;
+  background-size: contain;
+  background-position: center top;
+  opacity: 1;
+  transition: all ease .5s;
+  &:hover{
+    height: 4.1rem;
+    filter: brightness(113%);
+  }
+}
