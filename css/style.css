@@ -4321,6 +4321,14 @@ figure.article-cover img {
   border: 1px solid #842b4e;
   font-style: italic;
 }
+#mundial-clasificacion .section-paginacion .botones-paginacion button img {
+  width: 9px;
+  margin: 0 auto -4px;
+  display: block;
+}
+#mundial-clasificacion .section-paginacion .botones-paginacion button .ancho-icon {
+  width: 19px;
+}
 #mundial-clasificacion .section-paginacion .botones-paginacion button:hover {
   background: #842b4e;
 }
@@ -4408,4 +4416,204 @@ figure.article-cover img {
   #mundial-clasificacion .footer-logo a {
     filter: brightness(0) invert(1);
   }
+}
+
+.landing-mundial {
+  background-image: linear-gradient(to bottom, #2a3248 2%, rgba(132, 43, 78, 0));
+}
+.landing-mundial #header {
+  background: none;
+  box-shadow: none;
+}
+.landing-mundial h2 {
+  color: #FFF200 !important;
+  margin: 0;
+  font-weight: 400;
+  padding: 60px;
+}
+.landing-mundial .te-presentamos {
+  background-image: linear-gradient(to bottom, rgba(132, 43, 79, 0), #4e082c);
+}
+.landing-mundial .te-presentamos .titulo-regalos {
+  font-weight: 500;
+  text-align: left;
+}
+.landing-mundial .te-presentamos .info-regalos {
+  display: flex;
+}
+.landing-mundial .te-presentamos .info-regalos img {
+  width: 178px;
+}
+.landing-mundial .te-presentamos .info-regalos h3 {
+  text-align: left;
+  font-size: 33px;
+  font-weight: 400;
+  color: #fff200;
+  margin-left: 20px;
+}
+.landing-mundial .te-presentamos .info-prestamos {
+  text-align: left !important;
+  font-size: 18px !important;
+}
+.landing-mundial .te-presentamos span {
+  font-weight: 800;
+}
+.landing-mundial .como-participar {
+  background-color: #4e082c;
+}
+.landing-mundial .mundial-premios {
+  background-color: #4d062b;
+}
+.landing-mundial .mundial-premios div img {
+  max-width: 860px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.landing-mundial .mundial-premios .container .lista {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .landing-mundial .mundial-premios .container .lista {
+    grid-template-columns: 90%;
+  }
+}
+.landing-mundial .mundial-premios .container .lista .elemento {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin: 1px 0px 12px 5px;
+  padding: 0 12px 0;
+  border-radius: 32px;
+  border: dashed 1px #e8b82d;
+  position: relative;
+  font-style: italic;
+}
+.landing-mundial .mundial-premios .container .lista .elemento .oval {
+  width: 40px;
+  height: 40px;
+  margin: 1px 1px 0 0;
+  padding: 1px 1px 3px;
+  background-color: #e8b82d;
+  border-radius: 100px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4e082c;
+}
+.landing-mundial .mundial-premios .container .lista .elemento p {
+  margin-left: 3%;
+  text-align: left !important;
+}
+.landing-mundial .mundial-premios .container .lista .elemento p:nth-child(even) {
+  margin-left: 3%;
+}
+.landing-mundial .mundial-premios .container .lista .elemento p:nth-child(3) {
+  margin-right: 5%;
+}
+.landing-mundial .mundial-premios .container .lista .elemento .element-coin {
+  position: relative;
+}
+.landing-mundial .mundial-premios .container .lista .elemento .element-coin:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background-image: url(../img/icon-bitel-coin-3.svg);
+  background-repeat: no-repeat;
+  bottom: -2px;
+  width: 1em;
+  height: 1em;
+  margin-left: 6px;
+}
+.landing-mundial .mundial-premios .container .lista .elemento-activo {
+  background-color: #e8b82d;
+}
+.landing-mundial .mundial-premios .container .lista .elemento-activo .oval {
+  background-color: #4e082c;
+  color: #e8b82d;
+}
+.landing-mundial .mundial-premios .container .section-paginacion {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 0;
+  padding-bottom: 40px;
+}
+.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion {
+  display: flex;
+  flex-direction: row;
+}
+.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  padding: 1px 1px 3px;
+  background-color: #4e082e;
+  border-radius: 100px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e8b82d;
+  border: 1px solid #842b4e;
+  font-style: italic;
+}
+.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button img {
+  width: 9px;
+  margin: 0 auto -4px;
+  display: block;
+}
+.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button:hover {
+  background: #842b4e;
+}
+.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button:active {
+  background: #842b4e;
+}
+.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button.btn-activo {
+  background: #842b4e;
+}
+.landing-mundial .saca-ventaja {
+  background-color: #4e082c;
+}
+.landing-mundial .saca-ventaja .col-a,
+.landing-mundial .saca-ventaja .col-b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing-mundial .saca-ventaja .col-a h3,
+.landing-mundial .saca-ventaja .col-b h3 {
+  color: #FFF200;
+}
+.landing-mundial .saca-ventaja .col-a p:nth-of-type(1) {
+  text-align: center !important;
+}
+.landing-mundial .saca-ventaja .col-a p:nth-last-of-type(1) {
+  font-size: 10px !important;
+}
+.landing-mundial .cols-canjear .col-left .ventaja,
+.landing-mundial .cols-canjear .col-right .ventaja {
+  width: 160px;
+}
+.landing-mundial .cols-canjear .col-right .texto-ventaja {
+  background: url("../img/bg-regalo-monedas.png") no-repeat;
+  background-size: 100%;
+  text-align: center !important;
+  font-size: 24px !important;
+  line-height: 1.6 !important;
+  margin: 0 auto !important;
+}
+.landing-mundial .cols-canjear .col-right .te-regalamos {
+  color: #FFF200;
+}
+.landing-mundial .img-pueba {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.landing-mundial footer {
+  background-color: #4e082c;
 }

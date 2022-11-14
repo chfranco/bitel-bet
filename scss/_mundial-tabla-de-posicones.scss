@@ -190,6 +190,15 @@
                 color: #e8b82d;
                 border: 1px solid #842b4e;
                 font-style: italic;
+                img{
+                    width: 9px;
+                    margin: 0 auto -4px;
+                    display: block;
+                }
+                .ancho-icon{
+                    width: 19px;
+                    
+                }
                 &:hover{
                     background: #842b4e;
                 }
