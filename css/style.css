@@ -4294,6 +4294,10 @@ figure.article-cover img {
 }
 #mundial-clasificacion .tabla-posiciones-mundial {
   background-color: #4e082c;
+  background-image: url(../img/mundial-bgonda.png);
+  background-repeat: no-repeat;
+  background-position: center 380px;
+  background-size: 100%;
   margin: 0 80px 40px;
   position: relative;
   border-radius: 0 0 10px 10px;
@@ -4306,6 +4310,7 @@ figure.article-cover img {
 @media (max-width: 768px) {
   #mundial-clasificacion .tabla-posiciones-mundial {
     margin: 0;
+    background-position: center 800px;
   }
 }
 #mundial-clasificacion .tabla-posiciones-mundial .titulo-mi-posicion {
@@ -4750,6 +4755,10 @@ ul#main-menu li.featured .vuelvete-premium {
 }
 .landing-mundial .mundial-premios {
   background-color: #4d062b;
+  background-image: url(../img/mundial-bgonda.png);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: 100%;
 }
 .landing-mundial .mundial-premios div img {
   max-width: 860px;
@@ -4925,6 +4934,10 @@ ul#main-menu li.featured .vuelvete-premium {
 .landing-mundial .plan-ilimitado {
   background-color: #4d062b;
   padding: 70px 0 50px;
+  background-image: url(../img/mundial-bgonda.png);
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  background-size: 100%;
 }
 .landing-mundial .plan-ilimitado .section-ilimitados {
   align-items: center;

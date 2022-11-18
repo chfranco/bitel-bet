@@ -152,6 +152,10 @@
 
     .mundial-premios{
         background-color:#4d062b;
+        background-image: url(../img/mundial-bgonda.png);
+        background-repeat: no-repeat;
+        background-position: center 60px;
+        background-size: 100%;
         div{
             img{
                 max-width: 860px;
@@ -337,6 +341,10 @@
     .plan-ilimitado{
         background-color:#4d062b;
         padding: 70px 0 50px;
+        background-image: url(../img/mundial-bgonda.png);
+        background-repeat: no-repeat;
+        background-position: center 60px;
+        background-size: 100%;
         .section-ilimitados{
             align-items: center;
             @media (max-width: $md){

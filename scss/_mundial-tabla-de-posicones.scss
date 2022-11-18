@@ -104,6 +104,10 @@
 
     .tabla-posiciones-mundial{
         background-color: #4e082c;
+        background-image: url(../img/mundial-bgonda.png);
+        background-repeat: no-repeat;
+        background-position: center 380px;
+        background-size: 100%;
         margin: 0 80px 40px;
         position: relative; 
         border-radius: 0 0 10px 10px ;
@@ -112,6 +116,7 @@
         } 
         @media (max-width: $md){
             margin: 0;
+            background-position: center 800px;
         } 
         .titulo-mi-posicion{
             width: 85%;
