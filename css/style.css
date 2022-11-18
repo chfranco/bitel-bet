@@ -4418,6 +4418,51 @@ figure.article-cover img {
   }
 }
 
+ul#main-menu li.featured .text {
+  background-image: linear-gradient(to right, #ee2b78, #fff200 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul#main-menu li.featured .vuelvete-premium {
+  background-image: linear-gradient(to right, #06e8d2, #fff200 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nuevaFuncion {
+  width: 68px;
+  height: 22px;
+  margin: 0.2px 0 0.2px 37px;
+  border-radius: 4px;
+  background-color: #fff200;
+  color: #4e082c;
+  margin: 0.2px 0 0.2px 10px;
+}
+
+.icon-menu-polla {
+  background-image: url("../img/polla-bitel.png") !important;
+  width: 29px;
+  height: 29px;
+}
+
+.icon-menu-tabla {
+  background-image: url("../img/tabla-polla.png") !important;
+  width: 29px;
+  height: 29px;
+}
+
+.nuevo {
+  background-image: url(../img/nuevo.png) !important;
+  width: 44.5px;
+  height: 14.5px;
+  background-size: 45px;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
 .landing-mundial {
   background-image: linear-gradient(to bottom, #2a3248 2%, rgba(132, 43, 78, 0));
 }
