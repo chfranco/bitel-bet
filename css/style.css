@@ -2970,6 +2970,70 @@ button.btn-event .center .hourdate {
   bottom: -18px;
 }
 
+.popup-mundial {
+  position: relative;
+  min-height: 16rem;
+  max-height: calc(100vh - 100px);
+  background-color: #4E082C;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  padding: 2.7rem 1.2rem 2.5rem;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .popup-mundial .title {
+    margin: 0;
+  }
+}
+.popup-mundial .popup-ico-miundial {
+  width: 160px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .popup-mundial .popup-ico-miundial {
+    width: 120px;
+    margin: 6px auto;
+  }
+}
+.popup-mundial .text1-ico-miundial {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .popup-mundial .text1-ico-miundial {
+    font-size: 15px;
+  }
+}
+.popup-mundial .text2-ico-miundial {
+  font-style: italic;
+  font-weight: 600;
+  color: #fff200;
+  font-size: 20px;
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .popup-mundial .text2-ico-miundial {
+    font-size: 14px;
+  }
+}
+.popup-mundial .premio-mundial {
+  margin-bottom: -40px;
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+  .popup-mundial .premio-mundial {
+    width: 230px;
+    margin: 0 auto -40px;
+  }
+}
+
 .form ::placeholder {
   color: rgba(210, 210, 210, 0.5);
   font-size: 14px;
@@ -4617,6 +4681,9 @@ ul#main-menu li.featured .vuelvete-premium {
 }
 .landing-mundial .te-presentamos span {
   font-weight: 800;
+}
+.landing-mundial .te-presentamos .slider-ring .slick-arrow {
+  top: 9.1rem;
 }
 .landing-mundial .como-participar {
   background-color: #4e082c;
