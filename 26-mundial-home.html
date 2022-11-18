@@ -83,7 +83,7 @@
       </ul>
     </nav>
   </div>
-  <div class="page homepage">
+  <div class="page mundial-homepage">
     <header id="header">
       <div class="header-content">
         <button id="menu-toggler" class="btn" aria-label="Menú principal" onclick="openPopup('#main-menu-wrapper')"></button>
@@ -106,7 +106,7 @@
       </div>
       </div>
     </header>
-    <section class="promo mb-3">
+    <section class="promo mb-1">
       <div class="slider slider-promo">
         <div class="slide">
           <a href="#">
@@ -132,10 +132,6 @@
             <button class="tab btn main-tabs-group active" onclick="showTabContent(this, '#esports', 'main-tabs-group')">
               <span class="icon icon-esports"></span>
               <span class="text btn">Esports</span>
-            </button>
-            <button class="tab btn main-tabs-group" onclick="showTabContent(this, '#futbol', 'main-tabs-group')">
-              <span class="icon icon-futbol"></span>
-              <span class="text btn">Fútbol</span>
             </button>
             <button class="tab btn main-tabs-group" onclick="showTabContent(this, '#futbol', 'main-tabs-group')">
               <span class="icon icon-futbol"></span>
@@ -373,38 +369,12 @@
               <div class="more more-left">
                 <button class="btn" aria-label="más"></button>
               </div>
-              <div class="tabs-scroll">
-                <div class="options-wrapper">
-                  <button
-                    class="tab btn futbol-tabs-group active"
-                    onclick="showTabContent(this, '#eventos', 'futbol-tabs-group')"
-                  >
-                    Eventos de hoy
-                  </button>
-                  <button
-                    class="tab btn futbol-tabs-group"
-                    onclick="showTabContent(this, '#futbol-peruano', 'futbol-tabs-group')"
-                  >
-                    Fútbol-peruano
-                  </button>
-                  <button
-                    class="tab btn futbol-tabs-group"
-                    onclick="showTabContent(this, '#liga-inglesa', 'futbol-tabs-group')"
-                  >
-                    Liga Inglesa
-                  </button>
-                  <button
-                    class="tab btn futbol-tabs-group"
-                    onclick="showTabContent(this, '#futbol-4-content', 'futbol-tabs-group')"
-                  >
-                    Vacía
-                  </button>
-                </div>
-              </div>
               <div class="more more-right">
                 <button class="btn" aria-label="más"></button>
               </div>
-            </div><!-- .futbol-tabs -->
+            </div>
+            
+            <!-- .futbol-tabs -->
             <div id="eventos" class="tab-content futbol-tabs-content futbol-tabs-group active">
               <ul class="bet-list bet-list-futbol">
                 <li class="bet-item status-closed">
@@ -416,28 +386,38 @@
                     <span class="bet-status">*Apuesta cerrada</span>
                   </header>
                   <div class="bet-options">
-                    <button class="bet-team btn">
-                      <div class="logo-name">
-                        <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
-                        <h4 class="name">Alianza Lima</h4>
+                    <button class="bet-team btn mundial-sectionA">
+                      <div class="mundial-evento color-evento-cerrado">
+                        <img src="./img/world-cup.png" alt="world-cup" class="world-cup">
+                        Evento internacional
                       </div>
-                      <div class="bet-value">
-                        <span class="number">2.8</span>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <img src="./img/logos/logo-team-alianza.svg" alt="Qatar">
+                          <h4 class="name">Qatar</h4>
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">2.8</span>
+                        </div>
                       </div>
                     </button>
                     <button class="bet-tie bet-team btn">
-                      <h4 class="name">Empate</h4>
                       <div class="bet-value">
                         <span class="number">3.4</span>
                       </div>
                     </button>
-                    <button class="bet-team btn">
-                      <div class="logo-name">
-                        <h4 class="name">Universitario de deportes</h4>
-                        <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                    <button class="bet-team btn mundial-sectionB">
+                      <div class="mundial-evento color-alerta-cierre">
+                        <span class="bet-status">En vivo - Apuesta cerrada</span>
                       </div>
-                      <div class="bet-value">
-                        <span class="number">1.5</span>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <h4 class="name">Universitario</h4>
+                          <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">1.5</span>
+                        </div>
                       </div>
                     </button>
                   </div>
@@ -451,33 +431,40 @@
                     <span class="bet-status">*04:23 para cerrar apuesta</span>
                   </header>
                   <div class="bet-options">
-                    <button class="bet-team btn">
-                      <div class="logo-name">
-                        <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
-                        <h4 class="name">Alianza Lima</h4>
+                    <button class="bet-team btn mundial-sectionA">
+                      <div class="mundial-evento color-evento-normal">
+                        <img src="./img/world-cup.png" alt="world-cup" class="world-cup">
+                        Evento internacional
                       </div>
-                      <div class="bet-value">
-                        <span class="number">2.8</span>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                          <h4 class="name">Alianza Lima</h4>
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">2.8</span>
+                        </div>
                       </div>
                     </button>
                     <button class="bet-tie bet-team btn">
-                      <h4 class="name">Empate</h4>
                       <div class="bet-value">
                         <span class="number">3.4</span>
                       </div>
                     </button>
-                    <button class="bet-team btn">
-                      <div class="logo-name">
-                        <h4 class="name">Universitario de deportes</h4>
-                        <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                    <button class="bet-team btn mundial-sectionB">
+                      <div class="mundial-evento color-alerta-por-cierre">
+                        <span class="bet-status">*04:23 para cerrar apuesta</span>
                       </div>
-                      <div class="bet-value">
-                        <span class="number">1.5</span>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <h4 class="name">Universitario de deportes</h4>
+                          <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">1.5</span>
+                        </div>
                       </div>
                     </button>
-                  </div>
-                  <div class="ad">
-                    <a href="#"><img src="./img/demo/ad-2.png" alt="Ad"></a>
                   </div>
                 </li>
                 <li class="bet-item status-open">
@@ -489,41 +476,134 @@
                     <span class="bet-status">30/03/2022 - 15:30PM</span>
                   </header>
                   <div class="bet-options">
-                    <button class="bet-team btn selected">
-                      <div class="logo-name">
-                        <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
-                        <h4 class="name">Alianza Lima</h4>
+                    <button class="bet-team btn mundial-sectionA ">
+                      <div class="mundial-evento color-evento-normal">
+                        <img src="./img/world-cup.png" alt="world-cup" class="world-cup">
+                        Evento internacional
                       </div>
-                      <div class="bet-value">
-                        <span class="number">2.8</span>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                          <h4 class="name">Alianza Lima</h4>
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">2.8</span>
+                        </div>
                       </div>
                     </button>
                     <button class="bet-tie bet-team btn">
-                      <h4 class="name">Empate</h4>
                       <div class="bet-value">
                         <span class="number">3.4</span>
                       </div>
                     </button>
-                    <button class="bet-team btn">
-                      <div class="logo-name">
-                        <h4 class="name">Universitario de deportes</h4>
-                        <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                    <button class="bet-team btn mundial-sectionB">
+                      <div class="mundial-evento color-evento-normal">
+                        <span class="bet-status">30/03/2022 - 15:30PM</span>
                       </div>
-                      <div class="bet-value">
-                        <span class="number">1.5</span>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <h4 class="name">Universitario de deportes</h4>
+                          <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">1.5</span>
+                        </div>
                       </div>
                     </button>
                   </div>
-                  <div class="bet-score">
-                    <header>
-                      <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
-                    </header>
-                    <div class="content">
-                      <input type="number" class="score" value="1" min="0">
-                      <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
-                      <input type="number" class="score" value="0" min="0">
+
+                </li>
+                <li class="bet-item status-open">
+                  <header class="bet-heading">
+                    <div class="league">
+                      <img src="./img/logos/logo-peru.svg" alt="Liga 1 - Perú">
+                      <h3 class="bet-title">Liga 1 - Perú</h3>
                     </div>
+                    <span class="bet-status">30/03/2022 - 15:30PM</span>
+                  </header>
+                  <div class="bet-options">
+                    <button class="bet-team btn mundial-sectionA ">
+                      <div class="mundial-evento color-evento-normal">
+                        <img src="./img/world-cup.png" alt="world-cup" class="world-cup">
+                        Evento internacional
+                      </div>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                          <h4 class="name">Alianza Lima</h4>
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">2.8</span>
+                        </div>
+                      </div>
+                    </button>
+                    <button class="bet-tie bet-team btn">
+                      <div class="bet-value">
+                        <span class="number">3.4</span>
+                      </div>
+                    </button>
+                    <button class="bet-team btn mundial-sectionB">
+                      <div class="mundial-evento color-evento-normal">
+                        <span class="bet-status">30/03/2022 - 15:30PM</span>
+                      </div>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <h4 class="name">Universitario de deportes</h4>
+                          <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">1.5</span>
+                        </div>
+                      </div>
+                    </button>
                   </div>
+
+                </li>
+                <li class="bet-item status-open">
+                  <header class="bet-heading">
+                    <div class="league">
+                      <img src="./img/logos/logo-peru.svg" alt="Liga 1 - Perú">
+                      <h3 class="bet-title">Liga 1 - Perú</h3>
+                    </div>
+                    <span class="bet-status">30/03/2022 - 15:30PM</span>
+                  </header>
+                  <div class="bet-options">
+                    <button class="bet-team btn mundial-sectionA ">
+                      <div class="mundial-evento color-evento-normal">
+                        <img src="./img/world-cup.png" alt="world-cup" class="world-cup">
+                        Evento internacional
+                      </div>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                          <h4 class="name">Alianza Lima</h4>
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">2.8</span>
+                        </div>
+                      </div>
+                    </button>
+                    <button class="bet-tie bet-team btn">
+                      <div class="bet-value">
+                        <span class="number">3.4</span>
+                      </div>
+                    </button>
+                    <button class="bet-team btn mundial-sectionB">
+                      <div class="mundial-evento color-evento-normal">
+                        <span class="bet-status">30/03/2022 - 15:30PM</span>
+                      </div>
+                      <div class="dato-equipo">
+                        <div class="logo-name">
+                          <h4 class="name">Universitario de deportes</h4>
+                          <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                        </div>
+                        <div class="bet-value">
+                          <span class="number">1.5</span>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+
                 </li>
               </ul>
             </div><!-- #eventos -->

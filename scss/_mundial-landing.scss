@@ -5,22 +5,50 @@
         box-shadow: none;
     }
     h2{
-        color: #FFF200!important;
+        color: #FFF200;
         margin: 0;
         font-weight: 400;
         padding: 60px;
     }
+    .col {
+        width: 50%;
+        @media (max-width: $md){
+            width: 100%;
+        }  
+    }
+    .cols {
+        display: flex;
+    }
     .te-presentamos{
         background-image: linear-gradient(to bottom, #842b4f00, #4e082c); 
+        .cols{
+            align-items: center;
+            @media (max-width: $md){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
 
         .titulo-regalos{
             font-weight: 500;
             text-align: left;
+            @media (max-width: 768px){
+                text-align: center;
+            }
         }
         .info-regalos{
             display: flex;
+            @media (max-width: 768px){
+                display: flex;
+                flex-direction: column;
+            }  
             img{
                 width: 178px;
+                @media (max-width: 768px){
+                width: 310px !important;
+                margin: 0 auto!important;
+                }
             }
             h3{
                 text-align: left;
@@ -28,11 +56,24 @@
                 font-weight: 400;
                 color: #fff200;
                 margin-left: 20px;
+                @media (max-width: 768px){
+                    margin: 0;
+                    text-align: center;
+                }  
             }
         }
         .info-prestamos{
-            text-align: left!important;
-            font-size: 18px!important;
+            text-align: left;
+            font-size: 18px;
+            @media (max-width: 767px){
+                display: none;
+            } 
+        }
+        .info-prestamos-movil{
+            text-align: center;
+            @media (min-width: $md){
+                display: none;
+            } 
         }
         span{
             font-weight: 800;
@@ -40,7 +81,13 @@
     }
     .como-participar{
         background-color: #4e082c;
+        .participar-mensaje h3{
+            padding: 30px;
+            margin: 0;
+        }
+
     }
+
 
     .mundial-premios{
         background-color:#4d062b;
@@ -70,7 +117,9 @@
                     border: dashed 1px #e8b82d;
                     position: relative;
                     font-style: italic;
-                    
+                    @media (max-width: 1140px){
+                        font-size: 14px;
+                    } 
                     .oval{
                         width: 40px;
                         height: 40px;
@@ -168,35 +217,93 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-between;
+            img{
+                margin: 0 auto;
+            }
             h3{
                 color: #FFF200;
             }
         }
         .col-a{
             p:nth-of-type(1){
-                text-align: center!important;
+                text-align: center;
             }
             p:nth-last-of-type(1){
-                font-size: 10px!important;
+                font-size: 13px;
             }
         }
+        
     }
     
     .cols-canjear{
+        @media (max-width: $md){
+            flex-direction: column;
+        }
         .col-left,
         .col-right{
             .ventaja{
                 width: 160px;
             }
+            h3{
+                font-size: 22px;
+                font-style: italic;
+                margin-bottom: 10px;
+            }
+            p{
+                margin-top: 0;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+        .col-right{
+            @media (max-width: $md){
+                margin-top:70px;
+            }
+        }
+
+        .btn-cta {
+            border: none;
+            .content{
+                padding: 0.9rem 61px;
+                
+            }
+        }
+
+    }
+
+
+    .plan-ilimitado{
+        background-color:#4d062b;
+        padding: 70px 0 50px;
+        .section-ilimitados{
+            align-items: center;
+            @media (max-width: $md){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        .img-pueba{
+            max-width: 300px;
+            width: 100%;
+            margin: 0 auto;
+
         }
         .col-right{
             .texto-ventaja{
                 background: url('../img/bg-regalo-monedas.png') no-repeat;
-                background-size: 100%;
-                text-align: center!important;
-                font-size: 24px!important;
-                line-height: 1.6!important;
-                margin: 0 auto!important;
+                background-size: 390px;
+                background-position: center;
+                text-align: center;
+                line-height: 1.6;
+                margin: 0 auto;
+                font-size: 24px;
+                line-height: 1.4;
+                font-style: italic;
+                @media (max-width: $md){
+                    margin-top: 60px;
+                }
             }
             .te-regalamos{
                 color: #FFF200;
@@ -204,12 +311,6 @@
         }
     }
 
-    .img-pueba{
-        max-width: 300px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 30px;
-    }
     footer{
         background-color: #4e082c;
     }

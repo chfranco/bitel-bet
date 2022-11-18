@@ -4426,23 +4426,61 @@ figure.article-cover img {
   box-shadow: none;
 }
 .landing-mundial h2 {
-  color: #FFF200 !important;
+  color: #FFF200;
   margin: 0;
   font-weight: 400;
   padding: 60px;
 }
+.landing-mundial .col {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .landing-mundial .col {
+    width: 100%;
+  }
+}
+.landing-mundial .cols {
+  display: flex;
+}
 .landing-mundial .te-presentamos {
   background-image: linear-gradient(to bottom, rgba(132, 43, 79, 0), #4e082c);
+}
+.landing-mundial .te-presentamos .cols {
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .landing-mundial .te-presentamos .cols {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .landing-mundial .te-presentamos .titulo-regalos {
   font-weight: 500;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .landing-mundial .te-presentamos .titulo-regalos {
+    text-align: center;
+  }
+}
 .landing-mundial .te-presentamos .info-regalos {
   display: flex;
 }
+@media (max-width: 768px) {
+  .landing-mundial .te-presentamos .info-regalos {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .landing-mundial .te-presentamos .info-regalos img {
   width: 178px;
+}
+@media (max-width: 768px) {
+  .landing-mundial .te-presentamos .info-regalos img {
+    width: 310px !important;
+    margin: 0 auto !important;
+  }
 }
 .landing-mundial .te-presentamos .info-regalos h3 {
   text-align: left;
@@ -4451,15 +4489,38 @@ figure.article-cover img {
   color: #fff200;
   margin-left: 20px;
 }
+@media (max-width: 768px) {
+  .landing-mundial .te-presentamos .info-regalos h3 {
+    margin: 0;
+    text-align: center;
+  }
+}
 .landing-mundial .te-presentamos .info-prestamos {
-  text-align: left !important;
-  font-size: 18px !important;
+  text-align: left;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .landing-mundial .te-presentamos .info-prestamos {
+    display: none;
+  }
+}
+.landing-mundial .te-presentamos .info-prestamos-movil {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .landing-mundial .te-presentamos .info-prestamos-movil {
+    display: none;
+  }
 }
 .landing-mundial .te-presentamos span {
   font-weight: 800;
 }
 .landing-mundial .como-participar {
   background-color: #4e082c;
+}
+.landing-mundial .como-participar .participar-mensaje h3 {
+  padding: 30px;
+  margin: 0;
 }
 .landing-mundial .mundial-premios {
   background-color: #4d062b;
@@ -4490,6 +4551,11 @@ figure.article-cover img {
   border: dashed 1px #e8b82d;
   position: relative;
   font-style: italic;
+}
+@media (max-width: 1140px) {
+  .landing-mundial .mundial-premios .container .lista .elemento {
+    font-size: 14px;
+  }
 }
 .landing-mundial .mundial-premios .container .lista .elemento .oval {
   width: 40px;
@@ -4582,38 +4648,251 @@ figure.article-cover img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+.landing-mundial .saca-ventaja .col-a img,
+.landing-mundial .saca-ventaja .col-b img {
+  margin: 0 auto;
 }
 .landing-mundial .saca-ventaja .col-a h3,
 .landing-mundial .saca-ventaja .col-b h3 {
   color: #FFF200;
 }
 .landing-mundial .saca-ventaja .col-a p:nth-of-type(1) {
-  text-align: center !important;
+  text-align: center;
 }
 .landing-mundial .saca-ventaja .col-a p:nth-last-of-type(1) {
-  font-size: 10px !important;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+  .landing-mundial .cols-canjear {
+    flex-direction: column;
+  }
 }
 .landing-mundial .cols-canjear .col-left .ventaja,
 .landing-mundial .cols-canjear .col-right .ventaja {
   width: 160px;
 }
-.landing-mundial .cols-canjear .col-right .texto-ventaja {
-  background: url("../img/bg-regalo-monedas.png") no-repeat;
-  background-size: 100%;
-  text-align: center !important;
-  font-size: 24px !important;
-  line-height: 1.6 !important;
-  margin: 0 auto !important;
+.landing-mundial .cols-canjear .col-left h3,
+.landing-mundial .cols-canjear .col-right h3 {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 10px;
 }
-.landing-mundial .cols-canjear .col-right .te-regalamos {
-  color: #FFF200;
+.landing-mundial .cols-canjear .col-left p,
+.landing-mundial .cols-canjear .col-right p {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 1.5;
 }
-.landing-mundial .img-pueba {
+@media (max-width: 768px) {
+  .landing-mundial .cols-canjear .col-right {
+    margin-top: 70px;
+  }
+}
+.landing-mundial .cols-canjear .btn-cta {
+  border: none;
+}
+.landing-mundial .cols-canjear .btn-cta .content {
+  padding: 0.9rem 61px;
+}
+.landing-mundial .plan-ilimitado {
+  background-color: #4d062b;
+  padding: 70px 0 50px;
+}
+.landing-mundial .plan-ilimitado .section-ilimitados {
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .landing-mundial .plan-ilimitado .section-ilimitados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.landing-mundial .plan-ilimitado .img-pueba {
   max-width: 300px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px;
+}
+.landing-mundial .plan-ilimitado .col-right .texto-ventaja {
+  background: url("../img/bg-regalo-monedas.png") no-repeat;
+  background-size: 390px;
+  background-position: center;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.4;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  .landing-mundial .plan-ilimitado .col-right .texto-ventaja {
+    margin-top: 60px;
+  }
+}
+.landing-mundial .plan-ilimitado .col-right .te-regalamos {
+  color: #FFF200;
 }
 .landing-mundial footer {
   background-color: #4e082c;
+}
+
+.mundial-homepage {
+  background-position: center 220px !important;
+  background-repeat-y: no-repeat !important;
+  background: #000;
+  background-image: url(../img/bg-mundial-home.png);
+}
+.mundial-homepage .container {
+  max-width: 1164px;
+  margin: 0px auto;
+  padding: 0px 1.5rem;
+}
+.mundial-homepage .main-tabs button.tab {
+  border-radius: 0.7rem 0.7rem 0px 0px;
+  max-width: 14.75rem;
+  width: 100%;
+  margin: 0px 0.2rem;
+  padding: 1.1rem 1rem;
+}
+.mundial-homepage #como-apostar button:not(.btn-close-popup) {
+  position: relative;
+  z-index: 10;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/como-aportar-mundial.png) no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.3s;
+}
+.mundial-homepage #como-apostar button:not(.btn-close-popup) .text {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #FFF200;
+  text-align: center;
+  font-style: italic;
+  line-height: 1em;
+  margin-bottom: 0.2em;
+}
+.mundial-homepage .main-tabs-wrapper {
+  background-color: #323d59;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(19, 23, 34) 18%, rgb(50, 61, 89) 39%);
+  border-radius: 20px;
+  padding: 0.4rem;
+  box-shadow: 0 16px 70px rgba(0, 0, 0, 0.94);
+}
+.mundial-homepage .mundial-sectionA,
+.mundial-homepage .mundial-sectionB {
+  padding: 0 !important;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.mundial-homepage .mundial-sectionA .dato-equipo,
+.mundial-homepage .mundial-sectionB .dato-equipo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 576px) {
+  .mundial-homepage .mundial-sectionA .dato-equipo,
+.mundial-homepage .mundial-sectionB .dato-equipo {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+.mundial-homepage .mundial-sectionA .dato-equipo .logo-name,
+.mundial-homepage .mundial-sectionB .dato-equipo .logo-name {
+  margin-bottom: 0;
+}
+.mundial-homepage .mundial-sectionA div,
+.mundial-homepage .mundial-sectionB div {
+  width: 50%;
+  height: 100%;
+}
+.mundial-homepage .mundial-sectionA .mundial-evento,
+.mundial-homepage .mundial-sectionB .mundial-evento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .mundial-homepage .mundial-sectionA .mundial-evento,
+.mundial-homepage .mundial-sectionB .mundial-evento {
+    display: none;
+  }
+}
+.mundial-homepage .mundial-sectionA .mundial-evento img,
+.mundial-homepage .mundial-sectionB .mundial-evento img {
+  width: 20px;
+  margin: 10px;
+}
+.mundial-homepage .mundial-sectionA .bet-value,
+.mundial-homepage .mundial-sectionB .bet-value {
+  height: 20px;
+  width: 60px;
+}
+@media (min-width: 768px) {
+  .mundial-homepage .bet-heading {
+    display: none;
+  }
+}
+.mundial-homepage .mundial-sectionA {
+  display: flex !important;
+  flex-direction: row !important;
+  padding-left: 20px;
+}
+.mundial-homepage .mundial-sectionA .dato-equipo {
+  margin-right: 10px;
+}
+@media (max-width: 576px) {
+  .mundial-homepage .mundial-sectionA {
+    justify-content: flex-start !important;
+    padding: 8px !important;
+  }
+}
+.mundial-homepage .mundial-sectionB {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  padding-left: 20px;
+}
+.mundial-homepage .mundial-sectionB .dato-equipo {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 10px;
+}
+@media (max-width: 576px) {
+  .mundial-homepage .mundial-sectionB .dato-equipo .logo-name {
+    width: 100%;
+    margin-right: 42px;
+  }
+}
+@media (max-width: 576px) {
+  .mundial-homepage .mundial-sectionB {
+    justify-content: flex-start !important;
+    padding: 8px !important;
+  }
+}
+
+.color-evento-cerrado {
+  background-color: #5b637a;
+}
+
+.color-evento-normal {
+  background-color: #295e71;
+}
+
+.color-alerta-por-cierre {
+  background-color: #5b6047;
+  color: #FFF200;
+  font-weight: 600;
+}
+
+.color-alerta-cierre {
+  background-color: #5a4158;
+  color: #ff404b;
+  font-weight: 600;
 }

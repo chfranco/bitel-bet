@@ -1,0 +1,157 @@
+.mundial-homepage{
+background-position: center 220px !important;
+background-repeat-y: no-repeat!important;
+background: #000;
+background-image: url(../img/bg-mundial-home.png);
+
+    .container {
+        max-width: 1164px;
+        margin: 0px auto;
+        padding: 0px 1.5rem;
+    }
+
+    .main-tabs button.tab {
+        border-radius: 0.7rem 0.7rem 0px 0px;
+        max-width: 14.75rem;
+        width: 100%;
+        margin: 0px 0.2rem;
+        padding: 1.1rem 1rem;
+    }
+    
+    #como-apostar button:not(.btn-close-popup) {
+        position: relative;
+        z-index: 10;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/como-aportar-mundial.png) no-repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+        transition: all ease 0.3s;
+       .text {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #FFF200;
+            text-align: center;
+            font-style: italic;
+            line-height: 1em;
+            margin-bottom: 0.2em;
+        }
+    }
+
+    .main-tabs-wrapper {
+        background-color: #323d59;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(19,23,34,1) 18%, rgba(50,61,89,1) 39%);
+        border-radius: 20px;
+        padding: 0.4rem;
+        box-shadow: 0 16px 70px rgb(0 0 0 / 94%);
+    }
+
+    .mundial-sectionA,
+    .mundial-sectionB{
+        padding: 0 !important;
+        padding-left:20px;
+        overflow: hidden;
+        .dato-equipo{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            @media (max-width: $sm){
+                display: flex!important;
+                flex-direction: column !important;
+            }
+            .logo-name{
+             margin-bottom: 0;
+            }
+        }
+        div{
+            width: 50%;
+            height: 100%;
+        }
+        .mundial-evento{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: $md){
+                display: none;  
+            }
+            img{
+                width: 20px;
+                margin: 10px;
+            }
+        }
+        .bet-value{
+            height: 20px;
+            width: 60px;
+        }
+    }
+
+    .bet-heading{
+        @media (min-width: $md){
+            display: none;  
+        }
+    }
+
+    .mundial-sectionA{
+        display: flex!important;
+        flex-direction: row!important;
+        padding-left:20px;
+        .dato-equipo{
+            margin-right: 10px;
+        }
+        @media (max-width: $sm){
+            justify-content: flex-start!important;
+            padding: 8px!important;
+        }
+
+    }
+    .mundial-sectionB{
+        display: flex!important;
+        flex-direction: row-reverse!important;
+        padding-left:20px;
+        .dato-equipo{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-left: 10px;
+            .logo-name{
+                @media (max-width: $sm){
+                width: 100%;
+                margin-right: 42px;
+                }
+            }
+        }
+        @media (max-width: $sm){
+            justify-content: flex-start!important;
+            padding: 8px!important;
+        }
+    }
+
+    
+
+}
+
+.color-evento-cerrado{
+    background-color: #5b637a;
+}
+
+
+.color-evento-normal{
+    background-color: #295e71;
+}
+
+.color-alerta-por-cierre{
+    background-color: #5b6047;
+    color: #FFF200;
+    font-weight: 600;
+}
+
+.color-alerta-cierre{
+    background-color: #5a4158;
+    color: #ff404b;
+    font-weight: 600;
+}
+
+
+
