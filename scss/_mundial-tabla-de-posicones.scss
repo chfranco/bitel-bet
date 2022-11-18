@@ -31,20 +31,18 @@
 
         .titulo{
             text-align: center;
-            width: 268px;
-            height: 75px;
-            padding: 11px 4px 10px;
-            background-image: linear-gradient(to bottom, #842b4e, #4e082c); 
+            width: 283px;
+            height: 82px;
+            padding: 3px 6px 10px 1px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 40px;
-            border: 3px solid #e8b82d;
             margin: 0 auto;
             color: #fff200;
             font-size: 21px;
             font-style: italic;
-
+            background: url(../img/placa-titiulo-1.png) no-repeat;
         }
     }
 

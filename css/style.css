@@ -4159,19 +4159,18 @@ figure.article-cover img {
 }
 #mundial-clasificacion .header-titulo-mundial .titulo {
   text-align: center;
-  width: 268px;
-  height: 75px;
-  padding: 11px 4px 10px;
-  background-image: linear-gradient(to bottom, #842b4e, #4e082c);
+  width: 283px;
+  height: 82px;
+  padding: 3px 6px 10px 1px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 40px;
-  border: 3px solid #e8b82d;
   margin: 0 auto;
   color: #fff200;
   font-size: 21px;
   font-style: italic;
+  background: url(../img/placa-titiulo-1.png) no-repeat;
 }
 #mundial-clasificacion .tabla-posiciones-mundial {
   background-color: #4e082c;
@@ -4471,10 +4470,69 @@ ul#main-menu li.featured .vuelvete-premium {
   box-shadow: none;
 }
 .landing-mundial h2 {
-  color: #FFF200;
-  margin: 0;
   font-weight: 400;
   padding: 60px;
+  text-align: center;
+  width: 283px;
+  height: 82px;
+  padding: 3px 6px 10px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin: 0 auto 40px;
+  color: #fff200;
+  font-size: 21px;
+  font-style: italic;
+  background: url(../img/placa-titiulo-1.png) no-repeat;
+}
+.landing-mundial .titulo-2 {
+  text-align: center;
+  width: 363px;
+  height: 82px;
+  padding: 3px 6px 10px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin: 0 auto 40px;
+  color: #fff200;
+  font-size: 21px;
+  font-style: italic;
+  background: url(../img/placa-titiulo-2.png) no-repeat;
+}
+@media (max-width: 576px) {
+  .landing-mundial .titulo-2 {
+    width: 340px;
+    background-size: 300px;
+    background-position: center;
+    font-size: 20px;
+  }
+}
+.landing-mundial .titulo-3 {
+  text-align: center;
+  width: 521px;
+  margin: 0 auto;
+  display: block;
+  height: 82px;
+  padding: 3px 6px 10px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin: 0 auto 40px;
+  color: #fff200;
+  font-size: 21px;
+  font-style: italic;
+  background: url(../img/placa-titiulo-3.png) no-repeat;
+}
+@media (max-width: 576px) {
+  .landing-mundial .titulo-3 {
+    width: 340px;
+    background-size: 340px;
+    background-position: center;
+    font-size: 15px;
+  }
 }
 .landing-mundial .col {
   width: 50%;
