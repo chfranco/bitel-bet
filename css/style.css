@@ -4683,9 +4683,13 @@ ul#main-menu li.featured .vuelvete-premium {
     align-items: center;
   }
 }
+.landing-mundial .te-presentamos .cols .col small {
+  text-align: center;
+}
 .landing-mundial .te-presentamos .titulo-regalos {
   font-weight: 500;
   text-align: left;
+  font-style: italic;
 }
 @media (max-width: 768px) {
   .landing-mundial .te-presentamos .titulo-regalos {
@@ -4694,6 +4698,7 @@ ul#main-menu li.featured .vuelvete-premium {
 }
 .landing-mundial .te-presentamos .info-regalos {
   display: flex;
+  font-style: italic;
 }
 @media (max-width: 768px) {
   .landing-mundial .te-presentamos .info-regalos {
@@ -4723,9 +4728,14 @@ ul#main-menu li.featured .vuelvete-premium {
     text-align: center;
   }
 }
+.landing-mundial .te-presentamos .info-regalos h3 span {
+  font-size: 42px;
+}
 .landing-mundial .te-presentamos .info-prestamos {
   text-align: left;
   font-size: 18px;
+  font-style: italic;
+  margin-bottom: 8px;
 }
 @media (max-width: 767px) {
   .landing-mundial .te-presentamos .info-prestamos {
@@ -4734,6 +4744,7 @@ ul#main-menu li.featured .vuelvete-premium {
 }
 .landing-mundial .te-presentamos .info-prestamos-movil {
   text-align: center;
+  font-style: italic;
 }
 @media (min-width: 768px) {
   .landing-mundial .te-presentamos .info-prestamos-movil {
@@ -4743,15 +4754,17 @@ ul#main-menu li.featured .vuelvete-premium {
 .landing-mundial .te-presentamos span {
   font-weight: 800;
 }
-.landing-mundial .te-presentamos .slider-ring .slick-arrow {
-  top: 9.1rem;
-}
 .landing-mundial .como-participar {
   background-color: #4e082c;
 }
 .landing-mundial .como-participar .participar-mensaje h3 {
   padding: 30px;
   margin: 0;
+  font-style: italic;
+}
+.landing-mundial .slide-content p {
+  font-style: italic;
+  text-align: center;
 }
 .landing-mundial .mundial-premios {
   background-color: #4d062b;
@@ -4972,6 +4985,16 @@ ul#main-menu li.featured .vuelvete-premium {
 }
 .landing-mundial .plan-ilimitado .col-right .te-regalamos {
   color: #FFF200;
+}
+.landing-mundial .slider-ring .slick-arrow {
+  top: 9.8rem;
+  left: auto;
+  right: -1.4rem;
+}
+.landing-mundial .slider-ring .slick-arrow.slick-prev {
+  top: 146px;
+  left: auto;
+  left: -1.4rem;
 }
 .landing-mundial footer {
   background-color: #4e082c;

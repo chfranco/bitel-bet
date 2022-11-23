@@ -85,17 +85,24 @@
                 flex-direction: column;
                 align-items: center;
             }
+            .col{
+                small{
+                    text-align: center;
+                }
+            }
         }
 
         .titulo-regalos{
             font-weight: 500;
             text-align: left;
+            font-style: italic;
             @media (max-width: 768px){
                 text-align: center;
             }
         }
         .info-regalos{
             display: flex;
+            font-style: italic;
             @media (max-width: 768px){
                 display: flex;
                 flex-direction: column;
@@ -117,17 +124,23 @@
                     margin: 0;
                     text-align: center;
                 }  
+                span{
+                    font-size: 42px;
+                }
             }
         }
         .info-prestamos{
             text-align: left;
             font-size: 18px;
+            font-style: italic;
+            margin-bottom: 8px;
             @media (max-width: 767px){
                 display: none;
             } 
         }
         .info-prestamos-movil{
             text-align: center;
+            font-style: italic;
             @media (min-width: $md){
                 display: none;
             } 
@@ -136,19 +149,21 @@
             font-weight: 800;
         }
 
-        .slider-ring .slick-arrow {
-            top: 9.1rem;
-        }
     }
     .como-participar{
         background-color: #4e082c;
         .participar-mensaje h3{
             padding: 30px;
             margin: 0;
+            font-style: italic;
         }
 
     }
 
+    .slide-content p{
+        font-style: italic;
+        text-align: center;
+    }
 
     .mundial-premios{
         background-color:#4d062b;
@@ -378,6 +393,18 @@
                 color: #FFF200;
             }
         }
+    }
+
+    .slider-ring .slick-arrow {
+        top: 9.8rem;
+        left: auto;
+        right: -1.4rem;
+    }
+
+    .slider-ring .slick-arrow.slick-prev {
+        top: 146px;
+        left: auto;
+        left: -1.4rem;
     }
 
     footer{
