@@ -4945,6 +4945,7 @@ ul#main-menu li.featured .vuelvete-premium {
   border: dashed 1px #e8b82d;
   position: relative;
   font-style: italic;
+  width: 370px;
 }
 @media (max-width: 1140px) {
   .landing-mundial .slider__item .elemento {
