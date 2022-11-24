@@ -4772,6 +4772,7 @@ ul#main-menu li.featured .vuelvete-premium {
   background-repeat: no-repeat;
   background-position: center 60px;
   background-size: 100%;
+  padding-bottom: 70px;
 }
 .landing-mundial .mundial-premios div img {
   max-width: 860px;
@@ -4779,114 +4780,10 @@ ul#main-menu li.featured .vuelvete-premium {
   display: block;
   margin: 0 auto;
 }
-.landing-mundial .mundial-premios .container .lista {
-  display: grid;
-  grid-template-columns: 40% 40%;
-  justify-content: space-around;
-}
 @media (max-width: 768px) {
   .landing-mundial .mundial-premios .container .lista {
     grid-template-columns: 90%;
   }
-}
-.landing-mundial .mundial-premios .container .lista .elemento {
-  display: flex;
-  align-items: center;
-  height: 60px;
-  margin: 1px 0px 12px 5px;
-  padding: 0 12px 0;
-  border-radius: 32px;
-  border: dashed 1px #e8b82d;
-  position: relative;
-  font-style: italic;
-}
-@media (max-width: 1140px) {
-  .landing-mundial .mundial-premios .container .lista .elemento {
-    font-size: 14px;
-  }
-}
-.landing-mundial .mundial-premios .container .lista .elemento .oval {
-  width: 40px;
-  height: 40px;
-  margin: 1px 1px 0 0;
-  padding: 1px 1px 3px;
-  background-color: #e8b82d;
-  border-radius: 100px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #4e082c;
-}
-.landing-mundial .mundial-premios .container .lista .elemento p {
-  margin-left: 3%;
-  text-align: left !important;
-}
-.landing-mundial .mundial-premios .container .lista .elemento p:nth-child(even) {
-  margin-left: 3%;
-}
-.landing-mundial .mundial-premios .container .lista .elemento p:nth-child(3) {
-  margin-right: 5%;
-}
-.landing-mundial .mundial-premios .container .lista .elemento .element-coin {
-  position: relative;
-}
-.landing-mundial .mundial-premios .container .lista .elemento .element-coin:after {
-  content: "";
-  position: relative;
-  display: inline-block;
-  background-image: url(../img/icon-bitel-coin-3.svg);
-  background-repeat: no-repeat;
-  bottom: -2px;
-  width: 1em;
-  height: 1em;
-  margin-left: 6px;
-}
-.landing-mundial .mundial-premios .container .lista .elemento-activo {
-  background-color: #e8b82d;
-}
-.landing-mundial .mundial-premios .container .lista .elemento-activo .oval {
-  background-color: #4e082c;
-  color: #e8b82d;
-}
-.landing-mundial .mundial-premios .container .section-paginacion {
-  display: flex;
-  justify-content: center;
-  margin: 25px 0 0;
-  padding-bottom: 40px;
-}
-.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion {
-  display: flex;
-  flex-direction: row;
-}
-.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button {
-  width: 40px;
-  height: 40px;
-  margin: 5px;
-  padding: 1px 1px 3px;
-  background-color: #4e082e;
-  border-radius: 100px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #e8b82d;
-  border: 1px solid #842b4e;
-  font-style: italic;
-}
-.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button img {
-  width: 9px;
-  margin: 0 auto -4px;
-  display: block;
-}
-.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button:hover {
-  background: #842b4e;
-}
-.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button:active {
-  background: #842b4e;
-}
-.landing-mundial .mundial-premios .container .section-paginacion .botones-paginacion button.btn-activo {
-  background: #842b4e;
 }
 .landing-mundial .saca-ventaja {
   background-color: #4e082c;
@@ -4998,6 +4895,145 @@ ul#main-menu li.featured .vuelvete-premium {
 }
 .landing-mundial footer {
   background-color: #4e082c;
+}
+.landing-mundial .slider-container {
+  max-width: 900px;
+  margin: 15px auto;
+  position: relative;
+}
+.landing-mundial .slider {
+  position: relative;
+  padding-bottom: 380px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .landing-mundial .slider {
+    padding-bottom: 420px;
+  }
+}
+.landing-mundial .slider__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+@media (max-width: 768px) {
+  .landing-mundial .slider__item .web-premios {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .landing-mundial .slider__item .movil-premios {
+    display: none;
+  }
+}
+.landing-mundial .slider__item .elemento {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin: 1px 0px 12px 5px;
+  padding: 0 12px 0;
+  border-radius: 32px;
+  border: dashed 1px #e8b82d;
+  position: relative;
+  font-style: italic;
+}
+@media (max-width: 1140px) {
+  .landing-mundial .slider__item .elemento {
+    font-size: 14px;
+  }
+}
+.landing-mundial .slider__item .elemento .oval {
+  width: 40px;
+  height: 40px;
+  margin: 1px 1px 0 0;
+  padding: 9px 15px;
+  background-color: #e8b82d;
+  border-radius: 100px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4e082c;
+}
+.landing-mundial .slider__item .elemento p {
+  margin-left: 3%;
+  text-align: left !important;
+  font-size: 14px;
+}
+.landing-mundial .slider__item .elemento p:nth-child(even) {
+  margin-left: 3%;
+}
+.landing-mundial .slider__item .elemento p:nth-child(3) {
+  margin-right: 5%;
+}
+.landing-mundial .slider__item .elemento .element-coin {
+  position: relative;
+}
+.landing-mundial .slider__item .elemento .element-coin:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background-image: url(../img/icon-bitel-coin-3.svg);
+  background-repeat: no-repeat;
+  bottom: -2px;
+  width: 1em;
+  height: 1em;
+  margin-left: 6px;
+}
+.landing-mundial .slider__item .elemento-activo {
+  background-color: #e8b82d;
+}
+.landing-mundial .slider__item .elemento-activo .oval {
+  background-color: #4e082c;
+  color: #e8b82d;
+}
+.landing-mundial .slider__item--current {
+  opacity: 1;
+  z-index: 2;
+}
+.landing-mundial .controls {
+  display: flex;
+  justify-content: center;
+}
+.landing-mundial .controls__btn {
+  transform: translateY(-50%);
+  z-index: 99;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  padding: 1px 1px 3px;
+  background-color: #4e082e;
+  border-radius: 100px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e8b82d;
+  border: 1px solid #842b4e;
+  font-style: italic;
+}
+.landing-mundial .controls__btn img {
+  width: 12px !important;
+  margin-top: 2px !important;
+}
+.landing-mundial .btn-activo {
+  background: #842b4e;
+}
+.landing-mundial .controls__btn--prev {
+  left: 0;
+}
+.landing-mundial .controls__btn--next {
+  right: 0;
 }
 
 .mundial-homepage {
