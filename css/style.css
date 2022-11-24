@@ -1057,7 +1057,7 @@ input.score::-webkit-inner-spin-button, input.score::-webkit-outer-spin-button {
   }
 }
 #header.header-transparent {
-  background: none;
+  background: #2a3248 url(../img/bg-page-top.png) no-repeat;
 }
 @media (min-width: 992px) {
   #header.header-transparent {
@@ -1951,6 +1951,7 @@ ul.social-menu li a:hover {
 }
 .game-info section.match-score .team .score {
   width: 3.125rem;
+  background: transparent;
 }
 .game-info section.match-score .team:first-child {
   margin-right: 1.1rem;
@@ -3297,6 +3298,9 @@ ul#main-menu li a .icon.icon-menu-news {
 ul#main-menu li a .icon.icon-menu-calendar {
   background-position: -12.25rem center;
 }
+ul#main-menu li a .icon.icon-menu-bets {
+  background-position: -14.1rem center;
+}
 @media (min-width: 992px) {
   ul#main-menu li a .text {
     flex-shrink: 0;
@@ -3509,7 +3513,7 @@ table.user-info td.suscription a {
   bottom: 1rem;
   left: calc(50% - 105px);
   z-index: 40;
-  margin-bottom: -1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .overlay-bet-now {
@@ -4223,7 +4227,7 @@ figure.article-cover img {
 }
 #mundial-clasificacion .header-titulo-mundial .titulo {
   text-align: center;
-  width: 283px;
+  width: 363px;
   height: 82px;
   padding: 3px 6px 10px 1px;
   display: flex;
@@ -4234,7 +4238,7 @@ figure.article-cover img {
   color: #fff200;
   font-size: 21px;
   font-style: italic;
-  background: url(../img/placa-titiulo-1.png) no-repeat;
+  background: url(../img/placa-titiulo-2.png) no-repeat;
 }
 #mundial-clasificacion .posicion {
   margin-bottom: 40px;
