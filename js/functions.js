@@ -16,8 +16,8 @@ $(document).on('ready', function() {
   });
   $(".slider-ring").slick({
     dots: false,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     arrows: true,
     dots: false,
     infinite: false,

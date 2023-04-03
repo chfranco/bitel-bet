@@ -1057,7 +1057,7 @@ input.score::-webkit-inner-spin-button, input.score::-webkit-outer-spin-button {
   }
 }
 #header.header-transparent {
-  background: #2a3248 url(../img/bg-page-top.png) no-repeat;
+  background: none;
 }
 @media (min-width: 992px) {
   #header.header-transparent {
@@ -1951,7 +1951,6 @@ ul.social-menu li a:hover {
 }
 .game-info section.match-score .team .score {
   width: 3.125rem;
-  background: transparent;
 }
 .game-info section.match-score .team:first-child {
   margin-right: 1.1rem;
@@ -2671,6 +2670,138 @@ button.btn-event .center .hourdate {
   background: #06e8d2;
 }
 
+.popupUser {
+  position: relative;
+  min-height: 16rem;
+  max-height: calc(100vh - 100px);
+  background: linear-gradient(220.38deg, #C95DFF -21.35%, #2D035D 21.95%, #280020 147.74%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  padding: 2.7rem 1.2rem 2.5rem;
+  border-radius: 20px;
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /*---- INFO POPUPS ----*/
+}
+.popupUser::after {
+  background-image: url(../img/bg-popup2.png);
+  display: block;
+  position: absolute;
+}
+.popupUser:before {
+  pointer-events: none;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 60%;
+  background: url(../img/bg-hr-popup.png) no-repeat;
+  background-size: contain;
+  background-position: right top;
+}
+.popupUser.popup-with-header {
+  padding-top: 1rem;
+}
+.popupUser header.popup-header {
+  padding: 0.6rem 0 1.3rem;
+}
+.popupUser header.popup-header .title {
+  font-size: 0.88rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  border-bottom: 1px dotted #54648f;
+}
+.popupUser header.popup-header .title.tip {
+  position: relative;
+}
+.popupUser header.popup-header .title.tip:after {
+  font-size: 0.75rem;
+  bottom: -0.58em;
+  top: auto;
+}
+.popupUser .content figure.popup-icon {
+  max-width: 50px;
+  margin: 0 auto;
+}
+.popupUser .content figure.popup-icon .popup-icon-top {
+  margin-bottom: 10rem;
+}
+.popupUser .content .title {
+  color: #fff200;
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+.popupUser .content .text {
+  font-style: italic;
+  font-weight: 500;
+}
+.popupUser .content small {
+  font-style: italic;
+}
+.popupUser .content p {
+  font-size: 0.9rem;
+}
+.popupUser .btn-cta {
+  max-width: 260px;
+  width: 100%;
+}
+.popupUser .options.two {
+  display: flex;
+}
+.popupUser .options.two .btn-cta {
+  min-width: auto;
+}
+.popupUser .options.two .btn-cta:first-child {
+  margin-right: 0.6rem;
+}
+.popupUser.popup-scroll {
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+.popupUser.popup-scroll:after {
+  content: "";
+  position: absolute;
+  height: 5rem;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%);
+  z-index: 20;
+  pointer-events: none;
+  border-radius: 0 0 18px 18px;
+}
+.popupUser.popup-scroll .content {
+  padding-right: 0.4rem;
+  padding-bottom: 2.5rem;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  /* Handle */
+}
+.popupUser.popup-scroll .content::-webkit-scrollbar {
+  width: 4px;
+  transition: all ease 0.4s;
+  border-radius: 2px;
+}
+.popupUser.popup-scroll .content::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.17);
+}
+.popupUser.popup-scroll .content::-webkit-scrollbar-thumb {
+  background: rgba(6, 232, 210, 0.8);
+  border-radius: 10px;
+  transition: all ease 0.4s;
+}
+.popupUser.popup-scroll .content::-webkit-scrollbar-thumb:hover {
+  background: #06e8d2;
+}
+
 .table-purchase-info {
   display: flex;
   background-color: #1f2535;
@@ -3298,9 +3429,6 @@ ul#main-menu li a .icon.icon-menu-news {
 ul#main-menu li a .icon.icon-menu-calendar {
   background-position: -12.25rem center;
 }
-ul#main-menu li a .icon.icon-menu-bets {
-  background-position: -14.1rem center;
-}
 @media (min-width: 992px) {
   ul#main-menu li a .text {
     flex-shrink: 0;
@@ -3513,7 +3641,7 @@ table.user-info td.suscription a {
   bottom: 1rem;
   left: calc(50% - 105px);
   z-index: 40;
-  margin-bottom: 1.6rem;
+  margin-bottom: -1.6rem;
 }
 
 .overlay-bet-now {
@@ -4227,7 +4355,7 @@ figure.article-cover img {
 }
 #mundial-clasificacion .header-titulo-mundial .titulo {
   text-align: center;
-  width: 363px;
+  width: 283px;
   height: 82px;
   padding: 3px 6px 10px 1px;
   display: flex;
@@ -4238,7 +4366,7 @@ figure.article-cover img {
   color: #fff200;
   font-size: 21px;
   font-style: italic;
-  background: url(../img/placa-titiulo-2.png) no-repeat;
+  background: url(../img/placa-titiulo-1.png) no-repeat;
 }
 #mundial-clasificacion .posicion {
   margin-bottom: 40px;
