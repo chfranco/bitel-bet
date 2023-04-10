@@ -388,5 +388,51 @@
     padding: .8rem 1rem 1.1rem;
     border-radius: 0 8px 8px 8px;
     background-color: #252c40;
+    margin-bottom: 2.5px;
   }
+  .ft-content-bottom{
+    border-radius: 0 0px 8px 8px;
+  }
+  .encuentro-detalle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .marcador-parcial{
+    display: flex;
+    padding-top: 10px;
+    img{
+      width: 24px;
+      height: 24px;
+      display: block;
+      margin: 0 auto;
+    }
+    .marcador-pre{
+      background: #54648F;
+      width: 30px;
+      height: 21px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2px;
+      font-weight: 700;
+    }
+  }
+  .line-encuentro{
+    max-width:400px;
+    margin: 10px auto 0;
+  }
+  .tiempo-transcurrido{
+    margin-left: 37px;
+    p{
+      margin: 0;
+    }
+    .bet-status{
+      font-weight: 700;
+      color:$red;
+    }
+  }
+
 }

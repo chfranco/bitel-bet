@@ -1870,6 +1870,51 @@ ul.social-menu li a:hover {
   padding: 0.8rem 1rem 1.1rem;
   border-radius: 0 8px 8px 8px;
   background-color: #252c40;
+  margin-bottom: 2.5px;
+}
+.fake-tab .ft-content-bottom {
+  border-radius: 0 0px 8px 8px;
+}
+.fake-tab .encuentro-detalle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.fake-tab .marcador-parcial {
+  display: flex;
+  padding-top: 10px;
+}
+.fake-tab .marcador-parcial img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 0 auto;
+}
+.fake-tab .marcador-parcial .marcador-pre {
+  background: #54648F;
+  width: 30px;
+  height: 21px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  font-weight: 700;
+}
+.fake-tab .line-encuentro {
+  max-width: 400px;
+  margin: 10px auto 0;
+}
+.fake-tab .tiempo-transcurrido {
+  margin-left: 37px;
+}
+.fake-tab .tiempo-transcurrido p {
+  margin: 0;
+}
+.fake-tab .tiempo-transcurrido .bet-status {
+  font-weight: 700;
+  color: #ff5454;
 }
 
 #bets.modal-wrapper .btn-close-popup {
