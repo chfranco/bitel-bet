@@ -60,8 +60,17 @@
     .icon-esports{
       background-image: url(../img/icon-tab-esports.png);
     }
+    .icon-deportes{
+      background-image: url(../img/icon-tab-deportes.png);
+    }
     .icon-futbol{
-      background-image: url(../img/icon-tab-futbol.png);
+      background-image: url(../img/icon-tab-futbol2.png);
+      width: 23px;
+      margin-bottom: -5px;
+    }
+    .icon-ufc{
+      background-image: url(../img/icon-tab-mma.png);
+      width: 20px;
     }
   }
 }
@@ -119,7 +128,6 @@
       background-position: center;
       opacity: .25;
       transition: all ease .4s;
-      filter: sepia(100%) saturate(300%) hue-rotate(191deg);
     }
     .icon-2{
       background-position: calc(-#{$icon-size} * 1) 0;
@@ -135,6 +143,7 @@
     }
     &.active{
       border-color: white;
+      filter: brightness(0) invert(1);
       &:after{
         border-top-color: $white;
       }
@@ -148,7 +157,7 @@
 
 /*---- FUTBOL TABS ---*/
 .tab-list{
-  max-width: 500px;
+  // max-width: 500px;
   margin: 0 auto;
   .options-wrapper{
     display: flex;
@@ -165,6 +174,29 @@
     padding: 1rem .7rem;
     border-bottom: 1px solid transparent;
     border-bottom: 1px solid $metallic-blue;
+    .icon{
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      background-position: center;
+      transition: all ease .4s;
+    }
+    .icon-futbol {
+      background-image: url(../img/icon-futbol.svg);
+      &:hover {
+        background-image: url(../img/icon-futbol.svg);
+      }
+    }
+
+    .icon-mma {
+        background-image: url(../img/icon-mma.svg);
+      &:hover {
+        background-image: url(../img/icon-mma.svg);
+      }
+    }
+ 
+    
+    
     &:after{
       content: '';
       position: absolute;
@@ -180,7 +212,7 @@
     &:focus{
       outline: none;
     }
-    &:hover{
+    &:hover img{
       color: $teal;
     }
     &.active{

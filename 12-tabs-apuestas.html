@@ -40,47 +40,102 @@
               <button class="tab btn bets-tabs-group active" onclick="showTabContent(this, '#your-bets', 'bets-tabs-group')">Tus Apuestas</button>
             </div>
           </div>
-          <div id="all-bets" class="tab-content bets-tabs-content bets-tabs-group">
+          <div id="all-bets" class="tab-content bets-tabs-content bets-tabs-group active">
             <div class="game-info">
               <header>
                 <div class="logoname">
                   <figure class="logo">
-                    <img src="./img/logos/logo-esport-dota.svg" alt="Dota">
+                    <img src="./img/logos/inglaterra.png" alt="Dota">
                   </figure>
                   <h3 class="name">
-                    <span class="league">Dota 2  Champion League</span>
-                    Nemiga Vs. Monaco Gambit
+                    <span class="league">Primer League - Inglaterra</span>
+                    Arsenal Vs. Liverpool
                   </h3>
                 </div>
-                <!-- <div class="actions">
+                <div class="actions">
                   <button class="btn btn-action btn-remove" aria-label="Eliminar"></button>
-                </div> -->
+                </div>
               </header>
               <section class="winner tip">
                 <div class="name">
-                  Nemiga
+                  Arsenal
                   <span class="tag">Ganador</span>
                 </div>
                 <div class="bet-value">
-                  <span class="number">3.4</span>
+                  <span class="number">1.21</span>
+                </div>
+              </section>
+              <section class="winner tip">
+                <div class="name inicia">
+                  Empieza en 00:30:50
+                </div>
+              </section>
+            </div>
+            <div class="game-info">
+              <header>
+                <div class="logoname">
+                  <figure class="logo">
+                    <img src="./img/logos/inglaterra.png" alt="Dota">
+                  </figure>
+                  <h3 class="name">
+                    <span class="league">Primer League - Inglaterra</span>
+                    Arsenal Vs. Liverpool
+                  </h3>
+                </div>
+                <div class="actions">
+                  <button class="btn btn-action btn-remove" aria-label="Eliminar"></button>
+                </div>
+              </header>
+              <section class="winner tip">
+                <div class="name">
+                  Brentford
+                  <span class="tag">Ganador</span>
+                </div>
+                <div class="bet-value">
+                  <span class="number">1.21</span>
+                </div>
+              </section>
+              <section class="prediccion">
+                <p>Predicción de marcador por <span class="with-coin">50</span></p>
+                <div class="equipo-prediccion">
+                  <div class="equipo"><img src="./img/logos/Brentford.png" alt="">Brentford</div>
+                  <div class="marcador-pre">1</div>
+                </div>
+                <div class="equipo-prediccion">
+                  <div class="equipo"><img src="./img/logos/Arsenal.png" alt="">Arsenal</div>
+                  <div class="marcador-pre">0</div>
+                </div>
+              </section>
+              <section class="winner tip">
+                <div class="name inicia">
+                  Empieza en 00:10:14
                 </div>
               </section>
             </div>
             <div class="your-bet-values">
-              <div class="left">
+              <div class="bet-values line-divider">
                 <p>Tu apuesta:</p>
                 <div class="input-wrapper">
                   <input type="number" value="500" class="score" min="0">
                   <span class="with-coin"></span>
                 </div>
               </div>
-              <div class="right">
+              <div class="bet-values line-divider">
+                <p class="cuota-final">Cuota final</p>
+                <div class="bet-value">
+                  <span class="number">1.21</span>
+                </div>
+              </div>
+              <div class="bet-values">
                 Ganancia total:
-                <span class="number with-coin">2250</span>
+                <span class="number with-coin">850</span>
               </div>
             </div>
-            <div class="notice">
-              <div class="text">Actualmente tienes <strong class="with-coin">1303</strong>acumuladas</div>
+            <div class="notice secAcomula">
+              <div class="acomulado">
+                <div class="text">Actualmente tienes</div>
+                <div class="tuAcomulado"><p class="acomulado-valor">1303</p><span class="with-coin"></span><p> acumuladas</p></div>
+              </div>
               <a href="#">¿Necesitas más monedas?</a>
             </div>
             <div class="gradient-overlay"></div>
@@ -92,7 +147,7 @@
               </button>
             </section>
           </div><!-- .tab-content.#all-bets -->
-          <div id="your-bets" class="tab-content bets-tabs-content bets-tabs-group active">
+          <div id="your-bets" class="tab-content bets-tabs-content bets-tabs-group ">
             <div id="your-bets-inner-tabs" class="tabs-block">
               <button class="tab btn bets-inner-tabs-group active" onclick="showTabContent(this, '#pending-bets', 'bets-inner-tabs-group')">Pendientes</button>
               <button class="tab btn bets-inner-tabs-group" onclick="showTabContent(this, '#closed-bets', 'bets-inner-tabs-group')">Finalizadas</button>

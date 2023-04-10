@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6{
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
   font-style: italic;
-  margin: 0 0 2rem;
+  // margin: 0 0 2rem;
 
   &.framed{
     background: url(../img/bg-featured-title.png) no-repeat;
@@ -87,6 +87,12 @@ h1, h2, h3, h4, h5, h6{
     }
   }
 }
+
+.featured-paragraph{
+  margin: 0 0 6% 0;
+  font-style: italic;
+}
+
 .gradient-text{
   background-image: linear-gradient(to right, $teal, $yellow 100%);
   -webkit-background-clip: text;

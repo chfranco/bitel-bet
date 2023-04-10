@@ -84,6 +84,43 @@
       display: block;
       font-weight: 500;
     }
+    .inicia{
+      color: $yellow;
+    }
+  }
+  section.prediccion{
+    text-align: center;
+    p{
+      font-size: 14px;
+    }
+    .with-coin{
+      font-size: 16px;
+      color: $yellow;
+      font-weight: 700;
+    }
+    .equipo-prediccion{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .equipo{
+        display: flex;
+        align-items: center;
+        img{
+          width: 20px;
+          margin-right: 5px;
+        }
+      }
+      .marcador-pre{
+        background: #54648F;
+        width: 30px;
+        height: 21px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
   section.match-score{
     padding-bottom: 1rem;
@@ -121,7 +158,9 @@
 
 .your-bet-values{
   display: flex;
-  background-color: #1f2535;
+  flex-direction: column;
+  background: linear-gradient(229.56deg, #C95DFF -25.6%, #33006C 27.92%, #280020 183.43%);
+  opacity: 0.8;
   border: 1px solid $metallic-blue;
   border-radius: $br-md;
   font-style: normal;
@@ -129,29 +168,36 @@
   font-weight: 300;
   margin-bottom: 1.3rem;
   text-align: center;
+  padding: 0 1rem;
   & > div{
-    padding: 1rem .9rem 1.2rem;
-    width: 50%;
+    padding: .7rem .9rem ;
     .number{
       font-weight: 700;
     }
   }
-  .left{
-    border-right: 1px dotted $metallic-blue;
-    .input-wrapper{
-      display: inline-flex;
-      align-items: center;
-    }
-    p{
-      margin: 0 0 .4rem;
-    }
-    input.score{
-      max-width: 50px;
+  .line-divider{
+    border-bottom: 1px dotted #54648f;
+  }
+  .bet-values{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .cuota-final{
+      font-weight: 700;
     }
     .with-coin{
-      top: -.18em;
+      color: $yellow;
+    }
+    p{
+      margin: 0;
     }
   }
+  input.score{
+    width: 50px;
+    height: 22px;
+  }
+
   .right{
     .number{
       display: block;
@@ -178,4 +224,43 @@
   text-align: center;
   padding: 1rem 1rem 2rem;
   font-size: .8rem;
+}
+
+.secAcomula{
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.notice{
+  .acomulado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px 8px;
+  }  
+  .text{
+    margin: 0;
+    font-size: 14px;
+  }
+  .tuAcomulado{
+    border-radius: 5px;
+    display: flex;
+    background-color: #3B4459;
+    color: $yellow;
+    width: 142px;
+    height: 29px;
+    justify-content: center;
+    align-items: center;
+    p{
+      margin: 0;
+      font-size: 13px;
+    }
+    .acomulado-valor{
+     font-weight: 700;
+     font-size: 15px;
+    }
+    .with-coin{
+      margin-bottom: 4px;
+    }
+  }
 }

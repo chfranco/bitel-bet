@@ -2,6 +2,9 @@
 
 section.promo{
   //padding-left: $desk-menu-width;
+  @media (max-width: $sm){
+    display: none;
+  }
 }
 .cta-bet-now{
   position: sticky;
@@ -19,5 +22,12 @@ section.promo{
 .page.homepage{
   .container{
     max-width: 1000px;
+  }
+}
+
+
+#como-apostar{
+  @media (max-width: $sm){
+    top: calc(50vh - 230px);
   }
 }

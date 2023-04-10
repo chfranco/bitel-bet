@@ -33,80 +33,23 @@
       <div class="text-center">
         <h1 class="featured-title framed"><span>Cronogramas y Rankings</span></h1>
       </div>
+      <div class="text-center">
+        <p class="featured-paragraph">Revisa el cronograma de partidos y la tabla de posiciones de tu liga favorita</p>
+      </div>
       <div class="container">
         <div class="main-tabs-wrapper cyr-tabs-wrapper mb-3">
           <div class="main-tabs">
-            <button class="tab btn main-tabs-group active" onclick="showTabContent(this, '#esports', 'main-tabs-group')">
-              <span class="icon icon-esports"></span>
-              <span class="text btn">Esports</span>
-            </button>
-            <button class="tab btn main-tabs-group" onclick="showTabContent(this, '#futbol', 'main-tabs-group')">
+            <button class="tab btn main-tabs-group active" onclick="showTabContent(this, '#futbol', 'main-tabs-group')">
               <span class="icon icon-futbol"></span>
               <span class="text btn">Fútbol</span>
             </button>
+            <button class="tab btn main-tabs-group" onclick="showTabContent(this, '#ufc', 'main-tabs-group')">
+              <span class="icon icon-ufc"></span>
+              <span class="text btn">UFC</span>
+            </button>
           </div>
-          <div id="esports" class="tab-content main-tabs-content main-tabs-group active">
-            <div class="esports-tabs">
-              <button class="tab btn active esports-tabs-group"
-                aria-label="Dota 2"
-                title="Dota 2"
-                onclick="showTabContent(this, '#esport-1-content', 'esports-tabs-group')"  
-              >
-                <span class="icon" style="background-image: url(./img/logos/logo-esport-1.png)"></span>
-              </button>
-              <button class="tab btn esports-tabs-group"
-                aria-label="League of legends"
-                title="League of legends"
-                onclick="showTabContent(this, '#esport-2-content', 'esports-tabs-group')" 
-              >
-                <span class="icon" style="background-image: url(./img/logos/logo-esport-4.png)"></span>
-              </button>
-              <button class="tab btn esports-tabs-group"
-                aria-label="Counter-Strike"
-                title="Counters-Strike"
-                onclick="showTabContent(this, '#esport-3-content', 'esports-tabs-group')" 
-              >
-                <span class="icon" style="background-image: url(./img/logos/logo-esport-csgo.png"></span>
-              </button>
-            </div>
-            <div id="esport-1-content"
-              class="tab-content esports-tabs-content esports-tabs-group active"
-            >
-              <button class="btn btn-grad btn-icon">
-                <div class="left">
-                  <span class="text">Cronogramas</span>
-                </div>
-                <span class="icon icon-arrow-left"></span>
-              </button>
-              <button class="btn btn-grad btn-icon">
-                <div class="left">
-                  <span class="text">Tabla de posiciones</span>
-                </div>
-                <span class="icon icon-arrow-left"></span>
-              </button>
-            </div><!-- #esport-1-content -->
-            <div id="esport-2-content"
-              class="tab-content esports-tabs-content esports-tabs-group"
-            >
-              <p>Contenido esports 2</p>
-            </div><!-- #esport-2-content-->
-            <div id="esport-3-content"
-              class="tab-content esports-tabs-content esports-tabs-group"
-            >
-              <p>Contenido esports 3</p>
-            </div><!-- #esport-3-content-->
-            <div id="esport-4-content"
-              class="tab-content esports-tabs-content esports-tabs-group"
-            >
-              <p>Contenido esports 4</p>
-            </div><!-- #esport-4-content-->
-            <div id="esport-5-content"
-              class="tab-content esports-tabs-content esports-tabs-group"
-            >
-              <p>Contenido esports 5</p>
-            </div><!-- #esport-5-content-->
-          </div><!-- #esports -->
-          <div id="futbol" class="tab-content main-tabs-content main-tabs-group">
+
+          <div id="futbol" class="tab-content main-tabs-content main-tabs-group active">
             <div class="futbol-tabs tab-list tab-list-slider">
               <div class="more more-left">
                 <button class="btn" aria-label="más"></button>
@@ -114,25 +57,31 @@
               <div class="tabs-scroll">
                 <div class="options-wrapper">
                   <button
-                    class="tab btn futbol-tabs-group"
+                  class="tab btn futbol-tabs-group"
+                  onclick="showTabContent(this, '#ligas-nacionales', 'futbol-tabs-group')"
+                >
+                Fútbol Peruano
+                </button>
+                  <button
+                    class="tab btn futbol-tabs-group active"
                     onclick="showTabContent(this, '#ligas-internacionales', 'futbol-tabs-group')"
                   >
-                    Ligas Internacionales
+                  Ligas internacionales
                   </button>
                   <button
                     class="tab btn futbol-tabs-group"
                     onclick="showTabContent(this, '#ligas-nacionales', 'futbol-tabs-group')"
                   >
-                    Ligas Nacionales
+                  Copas Internacionales - Clubes
                   </button>
                   <button
                     class="tab btn futbol-tabs-group"
                     onclick="showTabContent(this, '#liga-inglesa', 'futbol-tabs-group')"
                   >
-                    Liga Inglesa
+                  Copas Inter
                   </button>
                   <button
-                    class="tab btn futbol-tabs-group active"
+                    class="tab btn futbol-tabs-group"
                     onclick="showTabContent(this, '#otra-liga', 'futbol-tabs-group')"
                   >
                     Otra liga
@@ -143,20 +92,20 @@
                 <button class="btn" aria-label="más"></button>
               </div>
             </div><!-- .futbol-tabs -->
-            <div id="ligas-internacionales" class="tab-content futbol-tabs-content futbol-tabs-group">
+            <div id="ligas-internacionales" class="tab-content futbol-tabs-content futbol-tabs-group active">
               <ul class="accordeon mt-1">
                 <li class="accord-item active">
                   <button class="accord-btn btn btn-grad btn-icon">
                     <div class="left">
-                      <img src="./img/logos/flag-colombia.png" alt="" class="flag">
-                      <span class="text">Colombia Primera A</span>
+                      <img src="./img/logos/ligaArg.png" alt="" class="flag">
+                      <span class="text">Argentina - Primera División</span>
                     </div>
                     <span class="icon"></span>
                   </button>
                   <div class="accord-content">
                     <div class="flow">
                       <ul class="options-list">
-                        <li class="option"><button class="btn option-btn">Cronogramas</button></li>
+                        <li class="option"><button class="btn option-btn">Próximos Partidos</button></li>
                         <li class="option"><button class="btn option-btn">Tablas de posiciones</button></li>
                       </ul>
                     </div>
@@ -165,15 +114,15 @@
                 <li class="accord-item">
                   <button class="accord-btn btn btn-grad btn-icon">
                     <div class="left">
-                      <img src="./img/logos/flag-arg.png" alt="" class="flag">
-                      <span class="text">Liga Profesional Argentina</span>
+                      <img src="./img/logos/serieA.png" alt="" class="flag">
+                      <span class="text">Italia - Serie A</span>
                     </div>
                     <span class="icon"></span>
                   </button>
                   <div class="accord-content">
                     <div class="flow">
                       <ul class="options-list">
-                        <li class="option"><button class="btn option-btn">Cronogramas</button></li>
+                        <li class="option"><button class="btn option-btn">Próximos Partidos</button></li>
                         <li class="option"><button class="btn option-btn">Tablas de posiciones</button></li>
                       </ul>
                     </div>
@@ -182,15 +131,32 @@
                 <li class="accord-item">
                   <button class="accord-btn btn btn-grad btn-icon">
                     <div class="left">
-                      <img src="./img/logos/flag-serie-a.png" alt="" class="flag">
-                      <span class="text">Serie A</span>
+                      <img src="./img/logos/laLiga.png" alt="" class="flag">
+                      <span class="text">España - La Liga</span>
                     </div>
                     <span class="icon"></span>
                   </button>
                   <div class="accord-content">
                     <div class="flow">
                       <ul class="options-list">
-                        <li class="option"><button class="btn option-btn">Cronogramas</button></li>
+                        <li class="option"><button class="btn option-btn">Próximos Partidos</button></li>
+                        <li class="option"><button class="btn option-btn">Tablas de posiciones</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accord-item">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <img src="./img/logos/premier.png" alt="" class="flag">
+                      <span class="text">Inglaterra - Premier League</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Próximos Partidos</button></li>
                         <li class="option"><button class="btn option-btn">Tablas de posiciones</button></li>
                       </ul>
                     </div>
@@ -198,16 +164,173 @@
                 </li>
               </ul>
             </div><!-- #ligas-internacionales -->
-            <div id="ligas-nacionales" class="tab-content futbol-tabs-content futbol-tabs-group">
-              <p>Contenido Ligas Nacionales</p>
-            </div><!-- #ligas-nacionales-->
             <div id="liga-inglesa" class="tab-content futbol-tabs-content futbol-tabs-group">
               <p>Contenido Liga Inglesa</p>
             </div><!-- #liga-inglesa-->
-            <div id="otra-liga" class="tab-content futbol-tabs-content futbol-tabs-group active">
+            <div id="otra-liga" class="tab-content futbol-tabs-content futbol-tabs-group ">
               <p>Contenido Otra Liga</p>
             </div><!-- #otra-liga -->
           </div><!-- #futbol -->
+
+          <div id="ufc" class="tab-content main-tabs-content main-tabs-group">
+            <div class="futbol-tabs tab-list tab-list-slider">
+              <div class="more more-left">
+                <button class="btn" aria-label="más"></button>
+              </div>
+              <div class="tabs-scroll">
+                <div class="options-wrapper">
+                  <button
+                    class="tab btn ufc-tabs-group active"
+                    onclick="showTabContent(this, '#eventos', 'ufc-tabs-group')"
+                  >
+                    Eventos 
+                  </button>
+                  <button
+                    class="tab btn ufc-tabs-group"
+                    onclick="showTabContent(this, '#rankings', 'ufc-tabs-group')"
+                  >
+                    Rankings
+                  </button>
+                </div>
+              </div>
+              <div class="more more-right">
+                <button class="btn" aria-label="más"></button>
+              </div>
+            </div><!-- .UFC-tabs -->
+            <div id="eventos" class="tab-content ufc-tabs-content ufc-tabs-group active">
+              <ul class="accordeon mt-1">
+                <li class="accord-item active">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <img src="./img/logos/ufcNi.png" alt="" class="flag">
+                      <span class="text">UFC Fight Night</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Próximas Peleas</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accord-item">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <img src="./img/logos/ufc283.png" alt="" class="flag">
+                      <span class="text">UFC 283</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Próximas Peleas</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accord-item">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <img src="./img/logos/ufc284.png" alt="" class="flag">
+                      <span class="text">UFC 284</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Próximas Peleas</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accord-item">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <img src="./img/logos/ufc285.png" alt="" class="flag">
+                      <span class="text">UFC 285</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Próximas Peleas</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- #eventos --> 
+            <div id="rankings" class="tab-content ufc-tabs-content ufc-tabs-group ">
+              <ul class="accordeon mt-1">
+                <li class="accord-item active">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <span class="text">Peso Welter</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Tabla de posiciones</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accord-item">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <span class="text">Peso Gallo</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Tabla de posiciones</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accord-item">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <span class="text">Peso Mosca</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Tabla de posiciones</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="accord-item">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <span class="text">Peso Pluma</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Tabla de posiciones</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div><!-- #ranking -->                
+          </div><!-- #UFC -->
+
         </div><!-- .main-tabs-wrapper -->
       </div><!-- .container -->
     </main>
