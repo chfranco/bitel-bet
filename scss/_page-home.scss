@@ -13,6 +13,9 @@ section.promo{
   left: calc(50% - 105px);
   z-index: 40;
   margin-bottom: -1.6rem;
+  @media (max-width: $sm){
+    display: none;
+  }
 }
 .overlay-bet-now{
   width: 100vw;
@@ -29,5 +32,22 @@ section.promo{
 #como-apostar{
   @media (max-width: $sm){
     top: calc(50vh - 230px);
+  }
+}
+
+.btn-cta-footer{
+  width: 100%!important;
+  height: 70px;
+  bottom: 0;
+  position: fixed;
+  border-radius: 2rem 2rem 0 0;
+  padding-bottom: 0;
+  .content{
+    border-radius: 1.8rem 1.8rem 0 0;
+    height: 70px;
+    padding-bottom: 14px;
+  }
+  @media (min-width: $sm){
+    display: none;
   }
 }

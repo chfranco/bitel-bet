@@ -417,3 +417,117 @@ table.article-table{
   margin-top: 1.5rem;
   margin-bottom: -.6rem;
 }
+
+.bet-list-home{
+  padding-top: 30px!important;
+}
+
+.options-list-border{
+  border:none!important;
+}
+
+.team-a{
+  display: flex!important;
+  flex-direction: row!important;
+  align-items: center!important;
+  justify-content: space-between!important;
+  .logo-name{
+    margin-bottom: 0!important;
+  }
+}
+
+.team-b{
+  display: flex!important;
+  flex-direction: row-reverse!important;
+  align-items: center!important;
+  justify-content: space-between!important;
+  .logo-name{
+    margin-bottom: 0!important;
+  }
+}
+
+
+.btn-grad-home{
+  background: radial-gradient(432.47% 128.2% at 51.15% -8.29%, #42EBDB 0%, #5EBED8 39.09%, #4A5B88 100%)!important;
+  border-color: #4A5B88!important;
+}
+
+.btn-tabs-scroll{
+  height: 50px!important;
+  background: #54648F!important;
+  border-radius: 8px!important;
+  margin: 0 10px!important;
+  color: white!important;
+}
+
+.tab-list button.btn-tabs-scroll.active{
+  background: radial-gradient(440.14% 100% at 70.1% 0%, #5DF8E9 0%, #5F7BC4 100%)!important;
+  border: none;
+} 
+.tab-list button.btn-tabs-scroll.active::after{
+  display: none!important;
+} 
+
+.ufc-btn{
+  display: flex;
+  flex-direction: row;
+  img{
+    width: 30px;
+    margin-right: 7px;
+    margin-top: 3px;
+  }
+}
+
+.btn-cta {
+  width: 400px!important;
+  .content {
+    display: flex!important;
+    justify-content: space-evenly!important;
+    align-items: center!important;
+  }
+  .icon{
+    transition: all ease 0.4s;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    &:hover{
+      background: #42EBDB;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 0.6rem;
+      height: 0.6rem;
+      border-right: 3px solid rgb(30, 156, 164);
+      border-bottom: 3px solid rgb(30, 156, 164);
+      border-image: initial;
+      border-top: none;
+      border-left: none;
+      transform: rotate(-133deg) scale(0.7);
+      position: relative;
+      bottom: -0.12rem;
+    }
+  }
+}
+
+.cta-bet-now{
+  left: 0!important;
+} 
+
+.bet-number{
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #fff;
+  padding: 0.15rem 0rem;
+  border-radius: 1rem;
+  min-width: 40px;
+  font-weight: 700;
+  color: #323d59;
+  font-size: 15px;
+  text-align: center;
+}

@@ -448,6 +448,120 @@ table.article-table td {
   margin-bottom: -0.6rem;
 }
 
+.bet-list-home {
+  padding-top: 30px !important;
+}
+
+.options-list-border {
+  border: none !important;
+}
+
+.team-a {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.team-a .logo-name {
+  margin-bottom: 0 !important;
+}
+
+.team-b {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.team-b .logo-name {
+  margin-bottom: 0 !important;
+}
+
+.btn-grad-home {
+  background: radial-gradient(432.47% 128.2% at 51.15% -8.29%, #42EBDB 0%, #5EBED8 39.09%, #4A5B88 100%) !important;
+  border-color: #4A5B88 !important;
+}
+
+.btn-tabs-scroll {
+  height: 50px !important;
+  background: #54648F !important;
+  border-radius: 8px !important;
+  margin: 0 10px !important;
+  color: white !important;
+}
+
+.tab-list button.btn-tabs-scroll.active {
+  background: radial-gradient(440.14% 100% at 70.1% 0%, #5DF8E9 0%, #5F7BC4 100%) !important;
+  border: none;
+}
+
+.tab-list button.btn-tabs-scroll.active::after {
+  display: none !important;
+}
+
+.ufc-btn {
+  display: flex;
+  flex-direction: row;
+}
+.ufc-btn img {
+  width: 30px;
+  margin-right: 7px;
+  margin-top: 3px;
+}
+
+.btn-cta {
+  width: 400px !important;
+}
+.btn-cta .content {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+}
+.btn-cta .icon {
+  transition: all ease 0.4s;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+}
+.btn-cta .icon:hover {
+  background: #42EBDB;
+}
+.btn-cta .icon:after {
+  content: "";
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-right: 3px solid rgb(30, 156, 164);
+  border-bottom: 3px solid rgb(30, 156, 164);
+  border-image: initial;
+  border-top: none;
+  border-left: none;
+  transform: rotate(-133deg) scale(0.7);
+  position: relative;
+  bottom: -0.12rem;
+}
+
+.cta-bet-now {
+  left: 0 !important;
+}
+
+.bet-number {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #fff;
+  padding: 0.15rem 0rem;
+  border-radius: 1rem;
+  min-width: 40px;
+  font-weight: 700;
+  color: #323d59;
+  font-size: 15px;
+  text-align: center;
+}
+
 .icon {
   display: inline-block;
   background-size: contain;
@@ -2470,7 +2584,7 @@ ul.bet-list-futbol button.bet-tie .name {
 }
 @media (min-width: 768px) {
   .bet-score .content p {
-    max-width: 210px;
+    max-width: 289px;
   }
 }
 .bet-score .content input {
@@ -3806,6 +3920,11 @@ table.user-info td.suscription a {
   z-index: 40;
   margin-bottom: -1.6rem;
 }
+@media (max-width: 576px) {
+  .cta-bet-now {
+    display: none;
+  }
+}
 
 .overlay-bet-now {
   width: 100vw;
@@ -3819,6 +3938,25 @@ table.user-info td.suscription a {
 @media (max-width: 576px) {
   #como-apostar {
     top: calc(50vh - 230px);
+  }
+}
+
+.btn-cta-footer {
+  width: 100% !important;
+  height: 70px;
+  bottom: 0;
+  position: fixed;
+  border-radius: 2rem 2rem 0 0;
+  padding-bottom: 0;
+}
+.btn-cta-footer .content {
+  border-radius: 1.8rem 1.8rem 0 0;
+  height: 70px;
+  padding-bottom: 14px;
+}
+@media (min-width: 576px) {
+  .btn-cta-footer {
+    display: none;
   }
 }
 
@@ -3927,9 +4065,6 @@ section#canjear-monedas .container {
 }
 section#canjear-monedas figure {
   margin-bottom: 2.4rem;
-}
-section#canjear-monedas figure img {
-  margin-bottom: -1em;
 }
 section#canjear-monedas figure figcaption {
   font-size: 13px;
