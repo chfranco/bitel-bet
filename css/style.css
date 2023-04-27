@@ -3948,6 +3948,7 @@ table.user-info td.suscription a {
   position: fixed;
   border-radius: 2rem 2rem 0 0;
   padding-bottom: 0;
+  z-index: 2;
 }
 .btn-cta-footer .content {
   border-radius: 1.8rem 1.8rem 0 0;
