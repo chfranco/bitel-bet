@@ -25,6 +25,9 @@ section.promo{
 .page.homepage{
   .container{
     max-width: 1000px;
+    @media (max-width: $sm){
+      padding: 0;
+    }
   }
 }
 

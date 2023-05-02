@@ -465,6 +465,11 @@ table.article-table td {
 .team-a .logo-name {
   margin-bottom: 0 !important;
 }
+@media (max-width: 576px) {
+  .team-a .logo-name {
+    flex-direction: column;
+  }
+}
 
 .team-b {
   display: flex !important;
@@ -474,6 +479,11 @@ table.article-table td {
 }
 .team-b .logo-name {
   margin-bottom: 0 !important;
+}
+@media (max-width: 576px) {
+  .team-b .logo-name {
+    flex-direction: column-reverse;
+  }
 }
 
 .btn-grad-home {
@@ -3933,6 +3943,11 @@ table.user-info td.suscription a {
 
 .page.homepage .container {
   max-width: 1000px;
+}
+@media (max-width: 576px) {
+  .page.homepage .container {
+    padding: 0;
+  }
 }
 
 @media (max-width: 576px) {

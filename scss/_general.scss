@@ -433,6 +433,9 @@ table.article-table{
   justify-content: space-between!important;
   .logo-name{
     margin-bottom: 0!important;
+    @media (max-width: $sm){
+      flex-direction: column;
+    }
   }
 }
 
@@ -441,8 +444,12 @@ table.article-table{
   flex-direction: row-reverse!important;
   align-items: center!important;
   justify-content: space-between!important;
+
   .logo-name{
     margin-bottom: 0!important;
+    @media (max-width: $sm){
+      flex-direction: column-reverse;
+    }
   }
 }
 
