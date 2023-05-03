@@ -107,7 +107,7 @@
     &:hover{
       .icon{
         filter: invert(0) brightness(150) saturete(0);
-        opacity: .5;
+        opacity: .8;
       }
     }
     &:after{
@@ -126,8 +126,8 @@
       height: $icon-size;
       background-size: contain;
       background-position: center;
-      opacity: .25;
       transition: all ease .4s;
+      filter: invert(0) brightness(150) saturete(0)
     }
     .icon-2{
       background-position: calc(-#{$icon-size} * 1) 0;
