@@ -4,6 +4,10 @@ ul.accordeon{
   list-style: none;
   margin: 0;
   padding: 0;
+  h2{
+    font-size: 14px;
+    text-align: left;
+  }
   li.accord-item{
     margin-bottom: 0;
     display: block;

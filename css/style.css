@@ -4442,6 +4442,10 @@ ul.accordeon {
   margin: 0;
   padding: 0;
 }
+ul.accordeon h2 {
+  font-size: 14px;
+  text-align: left;
+}
 ul.accordeon li.accord-item {
   margin-bottom: 0;
   display: block;
