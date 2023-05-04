@@ -4,10 +4,6 @@ ul.accordeon{
   list-style: none;
   margin: 0;
   padding: 0;
-  h2{
-    font-size: 14px;
-    text-align: left;
-  }
   li.accord-item{
     margin-bottom: 0;
     display: block;
@@ -111,5 +107,12 @@ ul.options-list{
         background-color: lighten(#202f44, 8);
       }
     }
+  }
+}
+
+.futbol-tabs-group{
+  h2{
+    text-align: left;
+    font-size: 14px;
   }
 }

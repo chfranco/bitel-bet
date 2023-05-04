@@ -4442,10 +4442,6 @@ ul.accordeon {
   margin: 0;
   padding: 0;
 }
-ul.accordeon h2 {
-  font-size: 14px;
-  text-align: left;
-}
 ul.accordeon li.accord-item {
   margin-bottom: 0;
   display: block;
@@ -4541,6 +4537,11 @@ ul.options-list li.option .option-btn {
 }
 ul.options-list li.option .option-btn:hover {
   background-color: #2d4260;
+}
+
+.futbol-tabs-group h2 {
+  text-align: left;
+  font-size: 14px;
 }
 
 .slider-related-news {
