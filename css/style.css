@@ -3978,8 +3978,8 @@ table.user-info td.suscription a {
 .btn-cta-footer {
   width: 100% !important;
   height: 75px;
-  bottom: 119px;
-  position: absolute;
+  bottom: -1px;
+  position: sticky;
   border-radius: 2rem 2rem 0 0;
   padding-bottom: 0;
   z-index: 2;
