@@ -1089,6 +1089,25 @@ table.article-table td {
   color: #fff;
 }
 
+.logoContentBet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.estadoBet {
+  color: #fff;
+  font-size: 0.8125rem;
+  line-height: 2;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+.estadoBet-win {
+  background: #06e8d2;
+}
+.estadoBet-lost {
+  background: #ff5454;
+}
+
 .logoname {
   color: #687eb9;
   display: flex;
@@ -3958,9 +3977,9 @@ table.user-info td.suscription a {
 
 .btn-cta-footer {
   width: 100% !important;
-  height: 70px;
-  bottom: 0;
-  position: fixed;
+  height: 75px;
+  bottom: 119px;
+  position: absolute;
   border-radius: 2rem 2rem 0 0;
   padding-bottom: 0;
   z-index: 2;

@@ -74,6 +74,27 @@
   }
 }
 
+// Lineas nuevas para estado
+
+.logoContentBet{
+  display: flex;
+  justify-content: space-between;
+}
+
+.estadoBet{
+  color: #fff;
+  font-size: 0.8125rem;
+  line-height: 2;
+  padding:1px 3px;
+  border-radius: 3px;
+  &-win{
+    background: #06e8d2;
+  }
+  &-lost{
+    background: #ff5454;
+  }
+}
+
 .logoname{
   color: #687eb9;
   display: flex;
