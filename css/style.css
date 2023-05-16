@@ -1097,6 +1097,8 @@ table.article-table td {
 .estadoBet {
   color: #fff;
   font-size: 0.8125rem;
+  height: 28.5px;
+  width: 50.58px;
   line-height: 2;
   padding: 1px 3px;
   border-radius: 3px;
