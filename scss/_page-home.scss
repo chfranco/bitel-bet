@@ -40,16 +40,16 @@ section.promo{
 
 .btn-cta-footer{
   width: 100%!important;
-  height: 75px;
-  bottom: -1px;
+  margin-top: -2.6px;
+  bottom: 1px;
   position:sticky;
-  border-radius: 2rem 2rem 0 0;
   padding-bottom: 0;
   z-index: 2;
   .content{
-    border-radius: 1.8rem 1.8rem 0 0;
-    height: 70px;
+    border-radius: 1.8rem;
+    height: 60px;
     padding-bottom: 14px;
+    margin-bottom: 3px;
   }
   @media (min-width: $sm){
     display: none;
