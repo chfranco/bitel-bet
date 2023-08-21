@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Cronogramas Fútbol</title>
+</head>
+<body class="overlayed">
+  <div class="page" style="min-height: 100vh;">
+    <header id="header" class="header-transparent">
+      <div class="header-content">
+        <button id="menu-toggler" class="btn" aria-label="Menú principal" onclick="openPopup('#main-menu-wrapper')"></button>
+        <figure class="logo">
+          <a href="#">
+            <img src="./img/logo-bitel-bet.png" alt="Inicio">
+          </a>
+        </figure>
+        <a href="#" class="user-link user-link-premium btn">
+          <div class="user-icon"></div>
+        </a>
+      </div>
+    </header>
+    <main>
+ 
+    </main>
+    <button class="btn btn-cta mt-3" style="color: white;" onclick="openPopup('#cronogramas')">Abrir popup</button>
+    <div id="cronogramas" class="modal-wrapper has-dynamic-content" style="">
+      <div class="modal bitel-bg-topglow">
+        <button class="btn btn-close-popup sm" aria-label="cerrar" onclick="closePopup('#cronogramas')"></button>
+        <div class="content pb-1">
+          <h2 class="modal-title">Cronogramas</h2>
+          <div class="titulo-nba">
+            <div class="nba-flags">
+              <img class="nba-flag" src="img/logos/usa.png" alt="">
+              <img class="nba-logo" src="img/logos/nba.png" alt="">
+            </div>
+            <h2>NBA 2023/24</h2>
+          </div>
+           
+          <!-- 
+          <div class="date-filter">
+            <form action="">
+              <div class="from">
+                <label for="date-from">Fecha desde</label>
+                <input type="date" id="date-from">
+              </div>
+              <div class="to">
+                <label for="date-to">Fecha hasta:</label>
+                <input type="date" id="date-to">
+              </div>
+            </form>
+            <span class="icon"></span>
+          </div>
+          <div class="current-date">09 de Abril, 2022 - 14 de Abril, 2022</div>
+           -->
+
+          <div class="date-tabs tab-list tab-list-slider">
+            <div class="more more-left">
+              <button class="btn" aria-label="más"></button>
+            </div>
+            <div class="tabs-scroll">
+              <div class="options-wrapper">
+                <button class="tab btn date-tabs-group active" onclick="showTabContent(this, '#day-1', 'date-tabs-group')">
+                  P17
+                </button>
+                
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-2', 'date-tabs-group')">
+                  P18
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-3', 'date-tabs-group')">
+                  P19
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-3', 'date-tabs-group')">
+                  P20
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-3', 'date-tabs-group')">
+                  P21
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-3', 'date-tabs-group')">
+                  P22
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-4', 'date-tabs-group')">
+                  P23
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-5', 'date-tabs-group')">
+                  P24
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-6', 'date-tabs-group')">
+                  P25
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-7', 'date-tabs-group')">
+                  P26
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-8', 'date-tabs-group')">
+                  P27
+                </button>
+                <button class="tab btn date-tabs-group" onclick="showTabContent(this, '#day-8', 'date-tabs-group')">
+                  P28
+                </button>
+              </div>
+            </div>
+            <div class="more more-right">
+              <button class="btn" aria-label="más"></button>
+            </div>
+          </div><!-- .date-tabs -->
+          <div id="day-1" class="tab-content event-tabs-content date-tabs-group active">
+            <ul class="event-list">
+              <li class="event-item">
+                <button class="btn btn-event btn-grad">
+                  <div class="team left">
+                    <img src="./img/logos/unionComercio.png" alt="Team Name" class="team-logo">
+                    <div class="text">Unión Comercio</div>
+                  </div>
+                  <div class="center">
+                    <span class="date">21/07</span>
+                    <span class="hourdate">01:00 PM</span>
+                  </div>
+                  <div class="team right">
+                    <div class="text">César Vallejo</div>
+                    <img src="./img/logos/logo-alianza.png" alt="Invictus Gaming" class="team-logo">
+                  </div>
+                </button>
+              </li>
+              <li class="event-item">
+                <button class="btn btn-event btn-grad">
+                  <div class="team left">
+                    <img src="./img/logos/cienciano.png" alt="Team Name" class="team-logo">
+                    <div class="text">Cienciano</div>
+                  </div>
+                  <div class="center">
+                    <span class="date">21/07</span>
+                    <span class="hourdate">01:00 PM</span>
+                  </div>
+                  <div class="team right">
+                    <div class="text">Sport Huancayo</div>
+                    <img src="./img/logos/huancayo.png" alt="Invictus Gaming" class="team-logo">
+                  </div>
+                </button>
+              </li>
+              <li class="event-item">
+                <button class="btn btn-event btn-grad">
+                  <div class="team left">
+                    <img src="./img/logos/alianza.png" alt="Team Name" class="team-logo">
+                    <div class="text">Alianza Atletico</div>
+                  </div>
+                  <div class="center">
+                    <span class="date">21/07</span>
+                    <span class="hourdate">01:00 PM</span>
+                  </div>
+                  <div class="team right">
+                    <div class="text">Cusco</div>
+                    <img src="./img/logos/cusco.png" alt="Invictus Gaming" class="team-logo">
+                  </div>
+                </button>
+              </li>
+              <li class="event-item">
+                <button class="btn btn-event btn-grad">
+                  <div class="team left">
+                    <img src="./img/logos/unionComercio.png" alt="Team Name" class="team-logo">
+                    <div class="text">Unión Comercio</div>
+                  </div>
+                  <div class="center">
+                    <span class="date">21/07</span>
+                    <span class="hourdate">01:00 PM</span>
+                  </div>
+                  <div class="team right">
+                    <div class="text">César Vallejo</div>
+                    <img src="./img/logos/logo-alianza.png" alt="Invictus Gaming" class="team-logo">
+                  </div>
+                </button>
+              </li>
+              <li class="event-item">
+                <button class="btn btn-event btn-grad">
+                  <div class="team left">
+                    <img src="./img/logos/cienciano.png" alt="Team Name" class="team-logo">
+                    <div class="text">Cienciano</div>
+                  </div>
+                  <div class="center">
+                    <span class="date">21/07</span>
+                    <span class="hourdate">01:00 PM</span>
+                  </div>
+                  <div class="team right">
+                    <div class="text">Sport Huancayo</div>
+                    <img src="./img/logos/huancayo.png" alt="Invictus Gaming" class="team-logo">
+                  </div>
+                </button>
+              </li>
+              <li class="event-item">
+                <button class="btn btn-event btn-grad">
+                  <div class="team left">
+                    <img src="./img/logos/alianza.png" alt="Team Name" class="team-logo">
+                    <div class="text">Alianza Atletico</div>
+                  </div>
+                  <div class="center">
+                    <span class="date">21/07</span>
+                    <span class="hourdate">01:00 PM</span>
+                  </div>
+                  <div class="team right">
+                    <div class="text">Cusco</div>
+                    <img src="./img/logos/cusco.png" alt="Invictus Gaming" class="team-logo">
+                  </div>
+                </button>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer" class="page-footer">
+      <div class="content">
+        <div class="top">
+          <figure class="footer-logo">
+            <a href="#">
+              <img src="./img/logo-bitel-bet.png" alt="Inicio">
+            </a>
+          </figure>
+          <nav class="social-nav">
+            <ul class="menu social-menu">
+              <li>
+                <a href="#" class="icon icon-social icon-fb" aria-label="Facebook"></a>
+              </li>
+              <li>
+                <a href="#" class="icon icon-social icon-ig" aria-label="Instagram"></a>
+              </li>
+              <li>
+                <a href="#" class="icon icon-social icon-yt" aria-label="Youtube"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="bottom">
+          <a href="#" class="arrow-link">Términos y condiciones</a>
+        </div>
+        <button id="btn-btt" class="btn" aria-label="Volver arriba"></button>
+      </div>
+    </footer>
+  </div><!-- .page -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./assets/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/functions.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

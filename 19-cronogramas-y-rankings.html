@@ -43,6 +43,10 @@
               <span class="icon icon-futbol"></span>
               <span class="text btn">Fútbol</span>
             </button>
+            <button class="tab btn main-tabs-group" onclick="showTabContent(this, '#basquet', 'main-tabs-group')">
+              <span class="icon icon-basquet"></span>
+              <span class="text btn">Básquet</span>
+            </button>
             <button class="tab btn main-tabs-group" onclick="showTabContent(this, '#ufc', 'main-tabs-group')">
               <span class="icon icon-ufc"></span>
               <span class="text btn">UFC</span>
@@ -171,6 +175,41 @@
               <p>Contenido Otra Liga</p>
             </div><!-- #otra-liga -->
           </div><!-- #futbol -->
+
+          <div id="basquet" class="tab-content main-tabs-content main-tabs-group active">
+            <div class="futbol-tabs tab-list tab-list-slider">
+              <div class="more more-left">
+                <button class="btn" aria-label="más"></button>
+              </div>
+
+              <div class="more more-right">
+                <button class="btn" aria-label="más"></button>
+              </div>
+            </div><!-- .futbol-tabs -->
+            <div class="tab-content futbol-tabs-content futbol-tabs-group active">
+              <ul class="accordeon mt-1">
+                <li class="accord-item active">
+                  <button class="accord-btn btn btn-grad btn-icon">
+                    <div class="left">
+                      <img src="./img/logos/nba.png" alt="" class="flag">
+                      <span class="text">Argentina - Primera División</span>
+                    </div>
+                    <span class="icon"></span>
+                  </button>
+                  <div class="accord-content">
+                    <div class="flow">
+                      <ul class="options-list">
+                        <li class="option"><button class="btn option-btn">Próximos Partidos</button></li>
+                        <li class="option"><button class="btn option-btn">Tablas de posiciones</button></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div><!-- #ligas-internacionales -->
+
+          </div><!-- #basquet -->
 
           <div id="ufc" class="tab-content main-tabs-content main-tabs-group">
             <div class="futbol-tabs tab-list tab-list-slider">

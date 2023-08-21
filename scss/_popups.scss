@@ -416,8 +416,46 @@
   .modal-title{
     font-style: normal;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1.4rem;
     margin: 0 0 2rem;
+  }
+  .titulo-nba{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    h2 {
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+  .nba-flags{
+    display: flex;
+    align-items: center;
+  }
+  .nba-flag{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  .nba-tabla{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: $md){
+      justify-content: center;
+    }
+    .table-name{
+      text-align: center;
+    }
+    div{
+      width: 312px;
+      margin-bottom: 30px;
+    }
+  }
+  .nba-logo{
+    height: 35px;
+    width: 18px;
+    margin-right: 40px;
   }
   & > .content{
     max-width: 500px;

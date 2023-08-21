@@ -69,8 +69,8 @@
     top: -.25em;
     &:after{
       font-size: .85em;
-      width: 1em;
-      top: .8em;
+      width: 1.5em;
+      top: 0.7em;
     }
   }
   &.table-bet-details{
@@ -90,10 +90,10 @@
       border-right: none;
       &:first-child{
         padding-left: .5rem;
-        border-right: 1px solid #1f2535;
+        // border-right: 1px solid #1f2535;
       }
       &:last-child{
-        border-left: 1px solid #1f2535;
+        // border-left: 1px solid #1f2535;
       }
     }
     tbody{

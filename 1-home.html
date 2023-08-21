@@ -316,12 +316,19 @@
               </button>
               <button
                 class="tab btn deportes-tabs-group"
-                onclick="showTabContent(this, '#evenUfc', 'deportes-tabs-group')"
+                onclick="showTabContent(this, '#basquet', 'deportes-tabs-group')"
+              >
+              <span class="icon" style="background-image: url(./img/icon-tab-basket.png); height: 38px; width: 38px; "></span>
+              </button>
+              <button
+              class="tab btn deportes-tabs-group"
+              onclick="showTabContent(this, '#evenUfc', 'deportes-tabs-group')"
               >
               <span class="icon" style="background-image: url(./img/icon-tab-mma2.png)"></span>
               </button>
             </div>
-
+            
+            <!-- #futbol --> 
             <div id="evenFutbol" class="tab-content deportes-tabs-group active">
               <div class="futbol-tabs tab-list tab-list-slider">
                 <div class="more more-left">
@@ -335,6 +342,14 @@
                     >
                       Próximos partidos
                     </button>
+                    <button
+                    class="tab btn btn-tabs-scroll futbol-tabs-group ufc-btn" style="padding-top: 8px;"
+                    onclick="showTabContent(this, '#futbol-extremas', 'futbol-tabs-group')"
+                    >
+                      <img src="img/icon-extremo.png" alt="">
+                      ¡Apuestas<br> 
+                      Extremas!
+                    </button> 
                     <button
                       class="tab btn btn-tabs-scroll futbol-tabs-group"
                       onclick="showTabContent(this, '#futbol-peruano', 'futbol-tabs-group')"
@@ -358,9 +373,790 @@
                 <div class="more more-right">
                   <button class="btn" aria-label="más"></button>
                 </div>
-              </div><!-- .futbol-tabs -->
-
+              </div>
+              
+              <!-- .futbol-tabs -->
               <div id="eventos" class="tab-content futbol-tabs-group active">
+                <h2 class="text">Fútbol peruano</h2>
+                <ul class="accordeon mt-1">
+                  <li class="accord-item active">
+                    <button class="accord-btn btn btn-grad btn-grad-home btn-icon">
+                      <div class="left">
+                        <img src="./img/logos/liga1.png" alt="" class="flag">
+                        <span class="text">Liga 1</span>
+                      </div>
+                      <span class="icon"></span>
+                    </button>
+                    <div class="accord-content">
+                      <div class="flow">
+                        <ul class="options-list options-list-border">
+                          <li class="option">
+
+                            <ul class="bet-list bet-list-futbol bet-list-home">
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                                                            <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                                                            <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+
+                          </li>
+                        </ul> <!-- acordeon -->
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accord-item">
+                    <button class="accord-btn btn btn-grad btn-grad-home btn-icon">
+                      <div class="left">
+                        <img src="./img/logos/liga1.png" alt="" class="flag">
+                        <span class="text">Liga 1</span>
+                      </div>
+                      <span class="icon"></span>
+                    </button>
+                    <div class="accord-content">
+                      <div class="flow">
+                        <ul class="options-list options-list-border">
+                          <li class="option">
+                            <ul class="bet-list bet-list-futbol bet-list-home">
+                              <li class="bet-item status-closed">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*Apuesta cerrada</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*04:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul> <!-- acordeon -->
+                      </div>
+                    </div>
+                  </li>
+                </ul>
                 <h2 class="text">Ligas internacionales</h2>
                 <ul class="accordeon mt-1">
                   <li class="accord-item active">
@@ -1141,16 +1937,707 @@
                     </div>
                   </li>
                 </ul>
-              </div>  
-
-              <div id="futbol-peruano" class="tab-content futbol-tabs-group">
-                <h2 class="text">Futbol peruano</h2>
+                <h2 class="text">Copas internacionales - Clubes</h2>
                 <ul class="accordeon mt-1">
+                  <li class="accord-item active">
+                    <button class="accord-btn btn btn-grad btn-grad-home btn-icon">
+                      <div class="left">
+                        <img src="./img/logos/comebol.png" alt="" class="flag">
+                        <span class="text">CONMEBOL Sudamericana </span>
+                      </div>
+                      <span class="icon"></span>
+                    </button>
+                    <div class="accord-content">
+                      <div class="flow">
+                        <ul class="options-list options-list-border">
+                          <li class="option">
+
+                            <ul class="bet-list bet-list-futbol bet-list-home">
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                                                            <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                                                            <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <span>&af;</span>
+                                  <span class="bet-status">*00:10:23 para cerrar apuesta</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team team-a btn selected">
+                                    <div class="logo-name">
+                                      <img src="./img/logos/logo-team-alianza.svg" alt="Alianza Lima">
+                                      <h4 class="name">Alianza Lima</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">2.8</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-tie bet-team btn">
+                                    <h4 class="name">Empate</h4>
+                                    <div class="bet-value">
+                                      <span class="number">3.4</span>
+                                    </div>
+                                  </button>
+                                  <button class="bet-team team-b btn">
+                                    <div class="logo-name">
+                                      <h4 class="name">Universitario de deportes</h4>
+                                      <img src="./img/logos/logo-team-u.svg" alt="Universitario de deportes">
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">1.5</span>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="bet-score">
+                                  <header>
+                                    <p>Adivina el marcador y gana: <span class="ammount with-coin">35</span></p>
+                                  </header>
+                                  <div class="content">
+                                    <input type="number" class="score" value="1" min="0">
+                                    <p>Si no aciertas  el marcador no afectará tu apuesta inicial</p>
+                                    <input type="number" class="score" value="0" min="0">
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+
+                          </li>
+                        </ul> <!-- acordeon -->
+                      </div>
+                    </div>
+                  </li>
                   <li class="accord-item">
                     <button class="accord-btn btn btn-grad btn-grad-home btn-icon">
                       <div class="left">
-                        <img src="./img/logos/serieA.png" alt="" class="flag">
-                        <span class="text">Italia - Serie A</span>
+                        <img src="./img/logos/comebol.png" alt="" class="flag">
+                        <span class="text">CONMEBOL Sudamericana </span>
                       </div>
                       <span class="icon"></span>
                     </button>
@@ -1231,8 +2718,419 @@
                   </li>
                 </ul>
               </div>  
-            </div><!-- #futbol --> 
+
+              <!-- .futbol-Extremas -->
+              <div id="#futbol-extremas" class="tab-content futbol-tabs-group active">
+                <h2 class="text">Fútbol peruano</h2>
+                <ul class="accordeon mt-1">
+                  <li class="accord-item ">
+                    <button class="accord-btn btn btn-grad btn-grad-home btn-icon">
+                      <div class="left">
+                        <img src="./img/logos/liga1.png" alt="" class="flag">
+                        <span class="text">Liga 1</span>
+                      </div>
+                      <span class="icon"></span>
+                    </button>
+                    <div class="accord-content">
+                      <div class="flow">
+                        <ul class="options-list options-list-border">
+                          <li class="option">
+                            <ul class="bet-list bet-list-futbol bet-list-home">
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <div class="descricion-liga-extrema">
+                                    <img src="img/peru.png" alt="">
+                                    <span>Primera División - Perú</span>
+                                  </div>
+                                  <span>&af;</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team-extrema">
+                                    <div class="logo-name">
+                                      <h4 class="name">Valera anota de chalaca y lo celebra frente a la Tribuna Sur</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">5.00</span>
+                                    </div>
+                                  </button>
+                                </div>
+                              </li>
+
+                            </ul>
+                          </li>
+                        </ul> <!-- acordeon -->
+                      </div>
+                    </div>
+                    <div class="accord-content">
+                      <div class="flow">
+                        <ul class="options-list options-list-border">
+                          <li class="option">
+                            <ul class="bet-list bet-list-futbol bet-list-home">
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <div class="descricion-liga-extrema">
+                                    <img src="img/peru.png" alt="">
+                                    <span>Primera División - Perú</span>
+                                  </div>
+                                  <span>&af;</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team-extrema">
+                                    <div class="logo-name">
+                                      <h4 class="name">Valera anota de chalaca y lo celebra frente a la Tribuna Sur</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">5.00</span>
+                                    </div>
+                                  </button>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul> <!-- acordeon -->
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <h2 class="text">Copas internacionales - Clubes</h2>
+                <ul class="accordeon mt-1">
+                  <li class="accord-item">
+                    <button class="accord-btn btn btn-grad btn-grad-home btn-icon">
+                      <div class="left">
+                        <img src="./img/logos/copamundo.png" alt="" class="flag">
+                        <span class="text">Perú VS Brasil</span>
+                      </div>
+                      <span class="icon"></span>
+                    </button>
+                    <div class="accord-content">
+                      <div class="flow">
+                        <ul class="options-list options-list-border">
+                          <li class="option">
+                            <ul class="bet-list bet-list-futbol bet-list-home">
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <div class="descricion-liga-extrema">
+                                    <img src="img/peru.png" alt="">
+                                    <span>Primera División - Perú</span>
+                                  </div>
+                                  <span>&af;</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team-extrema">
+                                    <div class="logo-name">
+                                      <h4 class="name">Valera anota de chalaca y lo celebra frente a la Tribuna Sur</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">5.00</span>
+                                    </div>
+                                  </button>
+                                </div>
+                              </li>
+
+                            </ul>
+                          </li>
+                        </ul> <!-- acordeon -->
+                      </div>
+                    </div>
+                    <div class="accord-content">
+                      <div class="flow">
+                        <ul class="options-list options-list-border">
+                          <li class="option">
+                            <ul class="bet-list bet-list-futbol bet-list-home">
+                              <li class="bet-item status-closing">
+                                <header class="bet-heading">
+                                  <div class="descricion-liga-extrema">
+                                    <img src="img/peru.png" alt="">
+                                    <span>Primera División - Perú</span>
+                                  </div>
+                                  <span>&af;</span>
+                                </header>
+                                <div class="bet-options">
+                                  <button class="bet-team-extrema">
+                                    <div class="logo-name">
+                                      <h4 class="name">Valera anota de chalaca y lo celebra frente a la Tribuna Sur</h4>
+                                    </div>
+                                    <div class="bet-value">
+                                      <span class="number">5.00</span>
+                                    </div>
+                                  </button>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul> <!-- acordeon -->
+                      </div>
+                    </div>
+                  </li>
+                  <br>
+                </ul>
+              </div>  
+            </div>
+            <!-- #.futbol-Extremas --> 
+          
+            <!-- #basquet -->  
+            <div id="basquet" class="tab-content deportes-tabs-group ">
+              <div class="ufc-tabs tab-list tab-list-slider">
+                <div class="more more-left">
+                  <button class="btn" aria-label="más"></button>
+                </div>
+                <div class="tabs-scroll">
+                  <div class="options-wrapper">
+                    <button
+                      class="tab btn btn-tabs-scroll ufc-tabs-group ufc-btn active"
+                      onclick="showTabContent(this, '#basquet-proximos', 'ufc-tabs-group')"
+                    >
+                      Próximos peleas
+                    </button>
+
+                    <button
+                      class="tab btn btn-tabs-scroll ufc-tabs-group ufc-btn" style="padding-top: 8px;"
+                      onclick="showTabContent(this, '#basquet-extremas', 'ufc-tabs-group')"
+                    >
+                      <img src="img/icon-extremo.png" alt="">
+                      ¡Apuestas<br> 
+                      Extremas!
+                    </button> 
+                  </div>
+                </div>
+                <div class="more more-right">
+                  <button class="btn" aria-label="más"></button>
+                </div>
+              </div><!-- .ufc-tabs -->
+
+              <div id="basquet-proximos" class="tab-content ufc-tabs-group active">
+                <ul class="bet-list bet-list-esports">
+                  <li class="bet-item status-closing">
+                    <header class="bet-heading">
+                      <span>NBA</span>
+                      <span class="bet-status">24/03/2022 - 15:30PM</span>
+                    </header>
+                    <div class="bet-options">
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <h4 class="name">Miami Heat</h4>
+                          <div class="bet-value">
+                            <span class="number">21.4</span>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <div class="bet-value">
+                            <span class="number">2.50</span>
+                          </div>
+                          <h4 class="name">Clayton</h4>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="bet-item status-closing">
+                    <header class="bet-heading">
+                      <span>NBA</span>
+                      <span class="bet-status"><b>24/03/2022 - 15:30PM</b></span>
+                    </header>
+                    <div class="bet-options">
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <h4 class="name">Chicago Bulls</h4>
+                          <div class="bet-value">
+                            <span class="number">21.4</span>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <div class="bet-value">
+                            <span class="number">2.50</span>
+                          </div>
+                          <h4 class="name">Clayton</h4>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="bet-item status-closing">
+                    <header class="bet-heading">
+                      <span>NBA</span>
+                      <span class="bet-status">24/03/2022 - 15:30PM</span>
+                    </header>
+                    <div class="bet-options">
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <h4 class="name">Houston Rockets</h4>
+                          <div class="bet-value">
+                            <span class="number">1.12</span>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <div class="bet-value">
+                            <span class="number">2.12</span>
+                          </div>
+                          <h4 class="name">Clayton</h4>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="bet-item status-closing">
+                    <header class="bet-heading">
+                      <span>NBA</span>
+                      <span class="bet-status">24/03/2022 - 15:30PM</span>
+                    </header>
+                    <div class="bet-options">
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <h4 class="name">Denver Nuggets</h4>
+                          <div class="bet-value">
+                            <span class="number">1.12</span>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <div class="bet-value">
+                            <span class="number">2.12</span>
+                          </div>
+                          <h4 class="name">Clayton</h4>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="bet-item status-closing">
+                    <header class="bet-heading">
+                      <span>NBA</span>
+                      <span class="bet-status">24/03/2022 - 15:30PM</span>
+                    </header>
+                    <div class="bet-options">
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <h4 class="name">Denver Nuggets</h4>
+                          <div class="bet-value">
+                            <span class="number">1.12</span>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <div class="bet-value">
+                            <span class="number">2.12</span>
+                          </div>
+                          <h4 class="name">Clayton</h4>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="bet-item status-closing">
+                    <header class="bet-heading">
+                      <span>NBA</span>
+                      <span class="bet-status">24/03/2022 - 15:30PM</span>
+                    </header>
+                    <div class="bet-options">
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <h4 class="name">Miami Heat</h4>
+                          <div class="bet-value">
+                            <span class="number">1.12</span>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <div class="bet-value">
+                            <span class="number">2.12</span>
+                          </div>
+                          <h4 class="name">Clayton</h4>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>  
+
+              <div id="basquet-extremas" class="tab-content ufc-tabs-group active">
+                <ul class="bet-list bet-list-esports">
+                  <li class="bet-item status-closing">
+                    <header class="bet-heading">
+                      <span>NBA</span>
+                      <span class="bet-status"><b>24/03/2022 - 15:30PM</b></span>
+                    </header>
+                    <div class="bet-options">
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <h4 class="name">Chicago Bulls</h4>
+                          <div class="bet-value">
+                            <span class="number">21.4</span>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <div class="bet-value">
+                            <span class="number">2.50</span>
+                          </div>
+                          <h4 class="name">Clayton</h4>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="bet-item status-closing has-selected has-selected-left">
+                    <header class="bet-heading">
+                      <span>&af;</span>
+                      <span class="bet-status "><b>*04:40 para cerrar apuesta</b></span>
+                    </header>
+                    <div class="bet-options">
+                      <button class="bet-team btn selected">
+                        <div class="content">
+                          <h4 class="name">Edwards</h4>
+                          <div class="bet-value">
+                            <span class="number">2.54</span>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <div class="bet-value">
+                            <span class="number">3.20</span>
+                          </div>
+                          <h4 class="name">Usman</h4>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="bet-item ">
+                    <header class="bet-heading">
+                      <span>NBA</span>
+                      <span class="bet-status"><b>24/03/2022 - 15:30PM</b></span>
+                    </header>
+                    <div class="bet-options">
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <h4 class="name">Chicago Bulls</h4>
+                          <div class="bet-value">
+                            <span class="number">21.4</span>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="bet-team btn">
+                        <div class="content">
+                          <div class="bet-value">
+                            <span class="number">2.50</span>
+                          </div>
+                          <h4 class="name">Clayton</h4>
+                        </div>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>  
+
             
+            </div>
+            <!-- #basquet -->  
+            
+            <!-- #ufc -->  
             <div id="evenUfc" class="tab-content deportes-tabs-group ">
               <div class="ufc-tabs tab-list tab-list-slider">
                 <div class="more more-left">
@@ -1579,9 +3477,10 @@
                 </ul>
               </div>  
             
-            </div><!-- #ufc -->  
+            </div>
+            <!-- #ufc -->  
   
-          </div><!-- #futbol -->
+          </div>
 
 
 
