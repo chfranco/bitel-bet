@@ -380,3 +380,16 @@ ul.bet-list-futbol{
     }
   }
 }
+
+.basquet-equipo{
+  display: flex; align-items: center;
+  img{
+    width: 20px;
+  }
+  .ladoA{
+    padding-right: 5px;
+  }
+  .ladoB{
+    padding-left: 5px;
+  }
+}
